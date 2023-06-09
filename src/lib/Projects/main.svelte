@@ -1,7 +1,16 @@
 <main>
+    <h1> (Almost) All My Projects </h1>
+
     <div class="projectList show">
         {#each projects as item, index (index)}
-            <button class="hidden" style="transition-delay: {index * 200}ms;" bind:this={item.element}>
+            <button 
+            class="hidden" 
+            style="
+                transition-delay: {index * 200}ms;
+                background-image: linear-gradient( rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url('{item.img}')
+            " 
+            bind:this={item.element} 
+            aria-label="get more details from: {item.name}">
                 <div class="tags">
                     {#each item.tags as tag (tag)}
                         <p class="tag"> {tag} </p>
@@ -14,14 +23,14 @@
         {/each}
     </div>
 
-    <button> Get in Contact </button>
+    <OpenContact />
 </main>
 
 <script>
+    import OpenContact from '../Dialog/openContact.svelte';
+
     const projects = [
-        {name: 'This portfolio', tags: ['svelte', 'TS']},
-        {name: 'This portfolio', tags: ['svelte', 'TS']},
-        {name: 'This portfolio', tags: ['svelte', 'TS']},
+        {name: 'This portfolio', tags: ['Svelte', 'JS', 'GitPages'], img: './src/assets/projects/SSPort.png'},
     ]
 
 	import { onMount } from 'svelte';
@@ -80,27 +89,20 @@
         height: 240px;
         width: 240px;
         border-radius: 16px;
-        background-image: 
-        linear-gradient(
-        rgba(0, 0, 0, 0) 60%, 
-        rgba(0, 0, 0, 0.9) 100%
-        ),
-        linear-gradient(
-        rgba(250, 250, 250, 1) 0%, 
-        rgba(250, 250, 250, 1) 100%
-        )
-        ;
+        background-size: cover;
     }
 
 
 
     .projectList{
+        margin-top: 52px;
         justify-content: space-evenly;
         display: flex;
         margin-bottom: 52px;
     }
 
     main{
+        margin-top: -52px;
         width: 100%;
         height: 560px;
     }
@@ -117,4 +119,9 @@
         transform: translateX(0);
     }
 
+    .contact{
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
 </style>

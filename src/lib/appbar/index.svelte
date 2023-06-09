@@ -1,14 +1,10 @@
 <script lang="ts">
-let count: number = 0
-const increment = () => {
-    count += 1
-}
+import OpenContact from '../Dialog/openContact.svelte';
+
 </script>
 
 <main>
-<button on:click={increment}>
-    count is {count}
-</button>
+<OpenContact/>
 
 </main>
 
@@ -20,7 +16,7 @@ const increment = () => {
         display: flex;
         justify-content: right;
         background-color: #333;
-        height: 40px;
+        height: 44px;
         
     }
 

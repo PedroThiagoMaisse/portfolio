@@ -3,7 +3,7 @@
         <div class="imageDiv">
             <div class="imageOutline"></div>
             <div class="image"></div>
-            <p> Foto tirada por xxxx, em: xxx </p>
+            <p> Me, very happy with the meal that i just eated, Curitiba - 2023 </p>
         </div>
     </div>
 
@@ -51,8 +51,8 @@
         margin: 0px;
         padding: 0px;
         position: absolute;
-        top: 308px;
-        width: 300px;
+        top: 368px;
+        width: 360px;
         color: white;
         font-weight: 200;
         font-family: 'Segoe UI';
@@ -69,8 +69,8 @@
     .imageOutline{
         border-radius: 16px;
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 360px;
+        height: 360px;
         background-color: gray;
         opacity: 0.15;
     }
@@ -79,9 +79,9 @@
         background-size: cover;
         border-radius: 16px;
         position: absolute;
-        width: 300px;
-        height: 300px;
-        background-image: url(https://avatars.githubusercontent.com/u/78307731?v=4);
+        width: 360px;
+        height: 360px;
+        background-image: url('../../assets/avatar.webp');
         transform: translate(12px, 8px);
     }
 
