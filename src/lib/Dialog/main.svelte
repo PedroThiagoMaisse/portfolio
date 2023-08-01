@@ -57,6 +57,7 @@
     }
 
     dialog button{
+        background-color: #2a2a2a;
         width: 102px;
         margin-right: 8px;
         margin-bottom: 8px;
@@ -69,21 +70,18 @@
     }
 
     dialog{
-        color: #242424;
+        color: #FAFAFA;
         position: relative;
-        animation-timing-function: ease-in-out;
-        animation-duration: 1.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
         opacity: 0;
         scale: 0;
         transition: all 1s;
         border-radius: 16px;
+        border-color: #404040;
         z-index: 10;
         width: 400px;
         height: 300px;
-        background-color: #FAFAFA;
-        box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.45);
+        background-color: #656565;
+        box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.6);
     }
 
     dialog[open] {

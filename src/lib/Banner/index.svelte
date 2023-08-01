@@ -19,7 +19,7 @@
             background-color: {element.color};
             right: {i*200}px;"
         >
-            {element.text}
+            <spam class=hiddenWhenOppen> {element.title} </spam>
         </button>
 	{/each}
 
@@ -30,8 +30,9 @@
 
 <script>
     const array = [
-        {color: '#65706F', text: 'Web Development'},
-        {color: '#697065', text: 'CLI and Tools'}
+        {color: '#65706F', text: 'Web Development', title: 'Web Development'},
+        {color: '#697065', text: 'CLI and Tools', title: 'CLI and Tools uepa'},
+        {color: '#879694', text: 'Open Source Contributions', title: 'Open Source Contributions'}
     ]
 
     let openCardId = -1
