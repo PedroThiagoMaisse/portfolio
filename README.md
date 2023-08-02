@@ -16,6 +16,11 @@ To directly deploy to gitpages:
 
 ## Next steps
 
+- Better ReadMe
+- Study and indicate better the UI selected
+- Get banner to import images
+- Melhorar o texto dos banners
+- Put a list inside the banner and use it to build (with links)
 - Reduce animation when user decides to
 - Change all js to ts
 - Connect to backend
@@ -31,3 +36,4 @@ To directly deploy to gitpages:
 - Add more information add the actually screen to all projects
 - Fix prints
 - Fix Dialogs
+- Build command APIs

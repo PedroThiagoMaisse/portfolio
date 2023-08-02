@@ -6,9 +6,10 @@
 
 
 	{#each array as element, i (element)}
-        <p bind:this={element.elementText}>
-          {element.text}  
-        </p>
+        <div class=hiddenDiv bind:this={element.elementText}>
+          <h1>{element.title}</h1>
+          <p>{element.text}</p>
+        </div>
 
         <button 
             aria-label="toggle {element.text}"
@@ -19,7 +20,7 @@
             background-color: {element.color};
             right: {i*200}px;"
         >
-            <spam class=hiddenWhenOppen> {element.title} </spam>
+            <spam class=contra> {element.title} </spam>
         </button>
 	{/each}
 
@@ -30,9 +31,9 @@
 
 <script>
     const array = [
-        {color: '#65706F', text: 'Web Development', title: 'Web Development'},
-        {color: '#697065', text: 'CLI and Tools', title: 'CLI and Tools uepa'},
-        {color: '#879694', text: 'Open Source Contributions', title: 'Open Source Contributions'}
+        {color: '#65706F', text: 'Com conhecimento sobre Diversos frameworks, o  meu trabalho sempre foi bem dividido entre diversas línguas e stacks, como:', title: 'Desenvolvimento Web'},
+        {color: '#697065', text: 'De tempos em tempos vem a necessidade ou vontade de criar uma ferramenta para auxiliar meu dia a dia ou facilitar algum fluxo, como:', title: 'CLI e Ferramentas'},
+        {color: '#879694', text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 
     let openCardId = -1
@@ -52,30 +53,6 @@
             element.element.classList.add('no')
         }
     }
-
-    import { onMount } from 'svelte';
-
-    onMount(() =>{
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show')
-                    entry.target.classList.remove('hidden')
-                } else{
-                    entry.target.classList.remove('show')
-                    entry.target.classList.add('hidden')
-
-
-                }
-
-            })
-
-        })
-        array.forEach(element => {
-            observer.observe(element.element)
-        });
-    })  
-
 </script>
 
 
@@ -85,9 +62,9 @@
     }
 
     @keyframes showTxt {
-    0%   {}
-    50%  {opacity: 0;}
-    100%  {opacity: 1;}
+    0%   {z-index: 4;}
+    50%  {opacity: 0;z-index: 4;}
+    100%  {opacity: 1;z-index: 4;}
     }
 
     .hideText{
@@ -95,34 +72,36 @@
     }
 
     @keyframes hideTxt {
-    0%   {opacity: 1;}
-    50%  {opacity: 0;}
-    100%  {opacity: 0;}
+    0%   {opacity: 1;z-index: 4;}
+    50%  {opacity: 0;z-index: 4;}
+    100%  {opacity: 0;z-index: -10;}
     }
 
-    main p{
+    main .hiddenDiv{
         opacity: 0;
         animation-timing-function: ease-in-out;
         animation-duration: 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        z-index: 4;
-        bottom: 52px;
+        z-index: -10;
+        top: 52px;
         position: absolute;
         width: calc(100vw - 400px);
-        font-size: 42px;
+        font-size: 16px;
         font-family: 'Segoe UI';
+        padding-left: 10vw;
+        text-align: left;
     }
 
     @keyframes example {
     0%   {height: 160px; width: 160px; z-index: 2;}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px;}
-    100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2; }
+    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; color: rgba(255,255,255,0.5)}
+    100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;  color: rgba(255,255,255,0)}
     }
 
     @keyframes example2 {
-    0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;}
+    0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
+    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;color: rgba(255,255,255,0.5)}
     100%  {width: 160px; height: 160px; z-index: 1;}
     }
 
