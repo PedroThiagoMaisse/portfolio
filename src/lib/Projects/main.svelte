@@ -33,9 +33,9 @@
     import OpenContact from '../Dialog/openContact.svelte';
 
     const projects = [
-        {name: 'Esse portfolio (FE)', tags: ['Svelte', 'JS', 'GitPages'], img: '', text: 'Página Construída em Svelte, com foco na usabilidade e rapidez'},
-        {name: 'Esse portfolio (BE)', tags: ['Go', 'MongoDB'], img: '', text: 'o Backend (em Construção) para alimentar essa página'},
-        {name: 'CommitMapping', tags: ['Node', 'JS', 'NPX'], img: '', text: 'Uma CLI para encontrar todos os projetos dentro de um disco e commitar eles para uma página pública do gitHub'},
+        {name: 'Esse portfólio (FE)', tags: ['Svelte', 'JS', 'GitPages'], img: '', text: 'Página construída em Svelte, com foco na usabilidade e rapidez'},
+        {name: 'Esse portfólio (BE)', tags: ['Go', 'MongoDB'], img: '', text: 'O Backend (em construçao) para alimentar esta página'},
+        {name: 'CommitMapping', tags: ['Node', 'JS', 'NPX'], img: '', text: 'CLI para encontrar projetos dentro do disco e commitar eles para um projeto pública do gitHub'},
     ]
 
 	import { onMount } from 'svelte';

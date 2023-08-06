@@ -3,16 +3,17 @@
         <div class="imageDiv">
             <div class="imageOutline"></div>
             <div class="image"></div>
-            <p> Me, very happy with the meal that i just eated, Curitiba - 2023 </p>
+            <p> Eu, muito feliz com a comida que acabei de devorar, Curitiba - 2023 </p>
         </div>
     </div>
 
     <div class="textColumn">
-        <h1> Eu! </h1>
-        <p> Desenvolvedor com um pitinho de conhecimento sobre gestão de projeto, artes gráficas, litetura, música, matemática... a maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiando.</p>
+        <h1> Eu </h1>
+        <p> Desenvolvedor Pleno com um tiquinho de conhecimento sobre gestão de projeto, artes gráficas, literatura, música e matemática. 
+            A maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiar.</p>
         <h1> Engenharia </h1>
-        <p>  Por causa dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a desição de sempre me manter apreendendor Design Patternns, Stacks, Linguagens e Sistemas totalmente novos.</p>
-        <h1 class="quote" style="margin-top: 32px"> "... excelente líder, motivador, põe a mão na massa para descomplicar qualquer conceito como DEV." </h1>
+        <p>  Por influência dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a decisão de sempre me atualizar sobre Design Patternns, Stacks, linguagens e sistemas totalmente novos.</p>
+        <h1 class="quote" style="margin-top: 42px"> "... excelente líder, motivador, põe a mão na massa para descomplicar qualquer conceito como DEV." </h1>
         <p class="quote">   Wesley Santos, Coordenador de Markenting. </p>
    
     </div>
@@ -38,7 +39,7 @@
         left: 48px;
         text-align: left;
         margin-bottom: 0px;
-        margin-top: 16px;
+        margin-top: 32px;
     }
 
     .textColumn p{
@@ -47,7 +48,7 @@
         position: relative;
         padding: 16px;
         text-align: left;
-
+        font-size: 20px;
     }
 
     .imageDiv p{
@@ -65,7 +66,7 @@
     .imageDiv{
         position: relative;
         left: calc(50% - 200px);
-        top: calc(50% - 150px);
+        top: 125px;
         transform: rotate3d(0, 1, -0.1, 15deg);
     }
 
@@ -103,7 +104,7 @@
         display: flex;
         position: relative;
         width: 100%;
-        height: 560px;
+        min-height: 560px;
     }
 
 </style>

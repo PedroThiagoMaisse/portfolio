@@ -34,9 +34,9 @@
             Start: "2023",
             End: "Atual",
             Tasks: [
-                "Atuar como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
-                "Atuar como Scrum Master em uma squad responsável por chatbots, somando 1,2M de Mensagens mensais",
-                "Criação de uma CLI/Framework para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
+                "Atuei como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
+                "Atuei como Scrum Master em uma squad responsável por chatbots, somando 1,2M de Mensagens mensais",
+                "Criei de uma CLI/Framework para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
             ]
         },
         {
@@ -45,9 +45,9 @@
             Start: "2021",
             End: "2022",
             Tasks: [
-                "Arquitetar e Construir soluções utilizando Node TS, React, Vue e C# com conexões com sistemas SAP e SalesForce",
-                "Mentorar 20+ estagiários ",
-                "Auxiliar a squad responsável pelos chatbots da empresa em questões pontuais"
+                "Arquitetei e Construi soluções utilizando Node TS, React, Vue e C# com conexões com sistemas SAP e SalesForce",
+                "Mentorei 20+ estagiários",
+                "Auxiliei a squad responsável pelos chatbots da empresa em questões pontuais"
             ]
         },
         {
@@ -56,9 +56,9 @@
             Start: "2021",
             End: "2022",
             Tasks: [
-                "Desenvolver aplicações web, desktop e mobile.",
-                "Auxiliar na entrega e manutenção de uma plataforma que alcançou 20k de usuários em seu primeiro mês, e 100k em seu primeiro ano",
-                "Prestar apoio a outros estagiários."
+                "Desenvolvi aplicações web, desktop e mobile",
+                "Auxiliei na entrega e manutenção de uma plataforma que alcançou 20k de usuários em seu primeiro mês, e 100k em seu primeiro ano",
+                "Prestei apoio a outros estagiários"
             ]
         }
 
