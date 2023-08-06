@@ -8,12 +8,12 @@
     </div>
 
     <div class="textColumn">
-        <h1> Lorum iPsum aaaa </h1>
-        <p> Nulla facilisi. Nam posuere malesuada ligula a pellentesque. Nunc imperdiet, nulla ac ullamcorper efficitur, nisi lorem congue sapien, a dapibus est est vitae mi. Vivamus viverra risus fringilla purus convallis semper. Quisque efficitur pretium consectetur. Pellentesque sit amet mauris id magna sagittis laoreet. Pellentesque quis sollicitudin massa.</p>
-        <h1> Fusce sit amet est </h1>
-        <p>    Fusce sit amet est felis. ibh tortor cursus nunc, a sollicitudin neque libero quis tellus. Phasellus rutrum diam vel volutpat gravida. Integer rhoncus, ante in laoreet consequat, sapien ex rhoncus magna, ac interdum velit magna eget ipsum. Cras nec facilisis lacus. Suspendisse mauris nibh, volutpat et sem eget, ornare dictum leo. </p>
-        <h1 class="quote"> "Imagine some really cool text here" </h1>
-        <p class="quote">   writed by somebody that i care about. </p>
+        <h1> Eu! </h1>
+        <p> Desenvolvedor com um pitinho de conhecimento sobre gestão de projeto, artes gráficas, litetura, música, matemática... a maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiando.</p>
+        <h1> Engenharia </h1>
+        <p>  Por causa dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a desição de sempre me manter apreendendor Design Patternns, Stacks, Linguagens e Sistemas totalmente novos.</p>
+        <h1 class="quote" style="margin-top: 32px"> "... excelente líder, motivador, põe a mão na massa para descomplicar qualquer conceito como DEV." </h1>
+        <p class="quote">   Wesley Santos, Coordenador de Markenting. </p>
    
     </div>
 </main>
@@ -24,10 +24,13 @@
 
 
 <style>
+    h1.quote{
+        font-size: 30px;
+    }
     .quote{
         text-align: right !important;
-        left: calc(20% - 32px) !important;
-        width: 80%;
+        left: calc(10% - 32px) !important;
+        width: 90%;
     }
 
     .textColumn h1{

@@ -28,3 +28,6 @@ To directly deploy to gitpages:
 - Better Store and dialog(s)
 - Changing the Banner construction
 - Make the scroll appear on top of the page
+- Add more information add the actually screen to all projects
+- Fix prints
+- Fix Dialogs

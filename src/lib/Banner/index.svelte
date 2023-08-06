@@ -1,5 +1,7 @@
 <main>
     <div class="bg">
+        Be aware that this is under construction! <br>
+        Any Bug or improvement can be direct to <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a>
     </div>
 
 
@@ -28,9 +30,8 @@
 
 <script>
     const array = [
-        {color: '#65706F', text: 'one'},
-        {color: '#697065', text: 'two'},
-        {color: '#705F60', text: 'three'}
+        {color: '#65706F', text: 'Web Development'},
+        {color: '#697065', text: 'CLI and Tools'}
     ]
 
     let openCardId = -1
@@ -145,17 +146,18 @@
         margin-right: 16px;
     }
 
-    .bg{ 
+    .bg{
+        text-align: center;
+        padding-top: 160px;
         background-image: 
         linear-gradient(
         rgba(0, 0, 0, 0) 60%, 
         rgba(0, 0, 0, 0.9) 100%
-        ),
-        url('../../assets/banner.webp');
+        );
         z-index: -2;
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: calc(560px - 160px);
     }
 
     main{

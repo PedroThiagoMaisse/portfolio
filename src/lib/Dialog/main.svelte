@@ -3,10 +3,9 @@
         <button on:click={() => dialogElement.close()} class=closeBtn> close </button>
         <h1>Get in Contact</h1>
 
-        <button> Linkedin </button>
-        <button> Twitter </button> <br>
-        <button> GitHub </button>
-        <button> E-Mail </button> <br>
+        {#each buttons as element, i}
+            <button on:click={() => window.open(element.link, "_blank")}> {element.text} </button> {#if i%2 } <br> {/if}
+        {/each}
     </dialog>
 
 </main>
@@ -17,6 +16,29 @@
     import {dialogObject} from '../../store'
 
     let dialogObj
+
+    const buttons = [
+        {
+            text: "LinkedIn",
+            link: "https://www.linkedin.com/in/pedro-thiago-2536a01a0/"
+        },
+        
+        {
+            text: "Twitter",
+            link: "https://twitter.com/Pe_ssimista?t=imMJY3HtbLoXNbqRl5bBzg&s=08"
+        },
+        
+        {
+            text: "GitHub",
+            link: "https://github.com/PedroThiagoMaisse"
+        },
+        
+        {
+            text: "E-Mail",
+            link: "mailto:pedrothiagojosedasilva@gmail.com"
+        }
+
+    ]
 
     onMount(() =>{
         dialogObject.subscribe(value => {

@@ -2,43 +2,22 @@
     <img src="{stackedWaves}" alt="stacked multi-color waves to segregate the section" />
     <div>
         <h1>
-            Formal Work Experiences
+            Experiências de Trabalho Formais
         </h1>
 
-        <div class="workCard">
-            <p>
-                <spam class="jobTitle"> IT Analyst | Scrum Master </spam><br>
-                BRF - Curitiba,  2023 - Today
-            </p>
-            <ul>
-                <li>Created a CLI to padronize the company's Power Bi and Sharepoint Development</li>
-                <li>Act as SM and Tech Lead in a app with 200k+ anual users</li>
-                <li>Act as SM in the squad that develop the company's chatbots, accumulating more than 1 million monthly messages</li>
-            </ul>
-        </div>
-
-        <div class="workCard">
-            <p>
-                <spam class="jobTitle">Junior Software Engineer </spam><br>
-                BRF - Curitiba,  2022 - 2023
-            </p>
-            <ul>
-                <li>Architect and Builded a few solutions in Node TS, React, Vue, C# and SAP</li>
-                <li>Started to work with the company's chatbots</li>
-                <li>Act as a Mentor to 20+ interns</li>
-            </ul>
-        </div>
-
-        <div class="workCard">
-            <p>
-                <spam class="jobTitle">Software Engineer Internn</spam><br>
-                BRF - Curitiba,  2021 - 2022
-            </p>
-            <ul>
-            <li>Builded an app with 200k+ annual users using Vue and Node JS</li>
-            <li>Builded a few smaller solutions in Node TS, React, Vue and Stencil</li>
-            </ul>
-        </div>
+        {#each jobs as element, i (element)}
+            <div class="workCard">
+                <p>
+                    <spam class="jobTitle"> {element.Title} </spam><br>
+                    {element.Company},  {element.Start} - {element.End}
+                </p>
+                <ul>
+                {#each element.Tasks as line}
+                    <li> {line} </li>
+                {/each}
+                </ul>
+            </div>
+        {/each}
     </div>
 
     <img src="{stackedWavesOut}" alt="stacked multi-color waves to segregate the section" />
@@ -48,6 +27,43 @@
     import stackedWaves from '../../assets/layered-waves.svg'
     import stackedWavesOut from '../../assets/layered-waves-out.svg'
     
+    const jobs = [
+        {
+            Company: "BRF Food - Aceleração Digital",
+            Title: "Desenvolvedor - Scrum Master",
+            Start: "2023",
+            End: "Atual",
+            Tasks: [
+                "Atuar como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
+                "Atuar como Scrum Master em uma squad responsável por chatbots, somando 1,2M de Mensagens mensais",
+                "Criação de uma CLI/Framework para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
+            ]
+        },
+        {
+            Company: "BRF Food - Digital Lab",
+            Title: "Desenvolvedor Junior",
+            Start: "2021",
+            End: "2022",
+            Tasks: [
+                "Arquitetar e Construir soluções utilizando Node TS, React, Vue e C# com conexões com sistemas SAP e SalesForce",
+                "Mentorar 20+ estagiários ",
+                "Auxiliar a squad responsável pelos chatbots da empresa em questões pontuais"
+            ]
+        },
+        {
+            Company: "BRF Food - Digital Lab",
+            Title: "Estagiário",
+            Start: "2021",
+            End: "2022",
+            Tasks: [
+                "Desenvolver aplicações web, desktop e mobile.",
+                "Auxiliar na entrega e manutenção de uma plataforma que alcançou 20k de usuários em seu primeiro mês, e 100k em seu primeiro ano",
+                "Prestar apoio a outros estagiários."
+            ]
+        }
+
+    ]
+
 </script>
 
 

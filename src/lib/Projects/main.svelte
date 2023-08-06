@@ -1,5 +1,5 @@
 <main>
-    <h1> (Almost) All My Projects </h1>
+    <h1> (Quase) Todos os meus projetos </h1>
 
     <div class="projectList show">
         {#each projects as item, index (index)}
@@ -11,6 +11,9 @@
             " 
             bind:this={item.element} 
             aria-label="get more details from: {item.name}">
+                <p class="mainText">
+                    {item.text}
+                </p>
                 <div class="tags">
                     {#each item.tags as tag (tag)}
                         <p class="tag"> {tag} </p>
@@ -30,7 +33,9 @@
     import OpenContact from '../Dialog/openContact.svelte';
 
     const projects = [
-        {name: 'This portfolio', tags: ['Svelte', 'JS', 'GitPages'], img: './src/assets/projects/SSPort.png'},
+        {name: 'Esse portfolio (FE)', tags: ['Svelte', 'JS', 'GitPages'], img: '', text: 'Página Construída em Svelte, com foco na usabilidade e rapidez'},
+        {name: 'Esse portfolio (BE)', tags: ['Go', 'MongoDB'], img: '', text: 'o Backend (em Construção) para alimentar essa página'},
+        {name: 'CommitMapping', tags: ['Node', 'JS', 'NPX'], img: '', text: 'Uma CLI para encontrar todos os projetos dentro de um disco e commitar eles para uma página pública do gitHub'},
     ]
 
 	import { onMount } from 'svelte';
@@ -60,6 +65,13 @@
 
 
 <style>
+    .mainText{
+        font-size: 16px;
+        position: relative;
+        bottom: 42px;
+        text-align: center;
+        /* align-items:baseline; */
+    }
     .projectName{
         position: absolute;
         bottom: 8px;
