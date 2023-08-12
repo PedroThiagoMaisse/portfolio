@@ -9,6 +9,19 @@
         <div class=hiddenDiv bind:this={element.elementText}>
           <h1>{element.title}</h1>
           <p>{element.text}</p>
+          <ul>
+            {#each element.list as linha, i (linha)}
+                <li> 
+                    <a href="{linha.link}" style="font-size: 15px"> {linha.text}  </a> 
+                    {#if linha.tags}
+                    {#each linha.tags as tag, i (tag)}
+                        <spam style="background-color: {tagColors[tag]}" class=tag> {tag} </spam>
+                    {/each}  
+                    {/if}
+                    
+                </li>
+            {/each}
+          </ul>
         </div>
 
         <button 
@@ -30,10 +43,32 @@
 </main>
 
 <script>
+    const tagColors = {
+        Svelte: '#F73C00',
+        JS: '#D8B42D',
+        Node: '#D8B42D',
+        Vue: '#4BB483'
+    }
+
     const array = [
-        {color: '#65706F', text: 'Com conhecimento sobre Diversos frameworks, o  meu trabalho sempre foi bem dividido entre diversas línguas e stacks, como:', title: 'Desenvolvimento Web'},
-        {color: '#697065', text: 'De tempos em tempos vem a necessidade ou vontade de criar uma ferramenta para auxiliar meu dia a dia ou facilitar algum fluxo, como:', title: 'CLI e Ferramentas'},
-        {color: '#879694', text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
+        {
+            color: '#65706F', 
+            text: 'Com conhecimento sobre Diversos frameworks, o  meu trabalho sempre foi bem dividido entre diversas línguas e stacks, como:', 
+            title: 'Desenvolvimento Web',
+            list: [
+                {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'JS']},
+                {text: 'BRFCode, uma plataforma para auxiliar na validação em entregas;', link: 'https://BRFCode.com', tags: ['JS', 'Vue', 'Node']}
+            ]
+        },
+        {
+            color: '#697065',
+            list: [
+                {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
+                link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS']},
+            ], 
+            text: 'De tempos em tempos vem a necessidade ou vontade de criar uma ferramenta para auxiliar meu dia a dia ou facilitar algum fluxo, como:', 
+            title: 'CLI e Ferramentas'},
+        {color: '#879694',list: [], text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 
     let openCardId = -1
@@ -57,6 +92,16 @@
 
 
 <style>
+    .tag{
+        text-align: center;
+        line-height: 100%;
+        padding: 4px 4px 4px 5px;
+        font-size: 14px;
+        margin-left: 8px;
+        border-radius: 4px
+
+    }
+
     .showText{
         animation-name: showTxt !important;
     }
