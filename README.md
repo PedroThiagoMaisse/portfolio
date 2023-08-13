@@ -1,39 +1,49 @@
-# Svelte + TS + Vite
+# Portfolio
 
-This is my portfolio frontend
+Um simples frontend para servir como hub dos meus projetos, currículos e coisas assim.
 
-## Visit the current deployed version
+## Visite o projeto já hosteado
 
-Visit it at: <https://pedrothiagomaisse.github.io/newPortfolio/>
+Visite ele em: <https://pedrothiagomaisse.github.io/newPortfolio/>
 
-## Running it
+## Rodando
 
-To run locally just go with the normal:
+Para rodar localmente, siga o normal:
 > npm run dev
 
-To directly deploy to gitpages:
+para dar o deploy direto para gitpages use:
 > npm run deploy
 
-## Next steps
+## Melhorias mapeadas
 
-- Better ReadMe
-- Study and indicate better the UI selected
-- Get banner to import images
+### Feature 1: O básico
+- ~Melhorar o ReadMe~
+- ~Adicionar listas com links, e tags dentro do banner~
+- Importar imagens para dentro do Banner
+- Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)
 - Melhorar o texto dos banners
-- Put a list inside the banner and use it to build (with links)
-- Reduce animation when user decides to
-- Change all js to ts
-- Connect to backend
-- Pull information from backend on deploy
-- Get smaller package (if possible)
-- Make a better UX/UI
-- Add translation module
-- LightMode
-- Responsivity
-- Better Store and dialog(s)
-- Changing the Banner construction
-- Make the scroll appear on top of the page
-- Add more information add the actually screen to all projects
-- Fix prints
-- Fix Dialogs
-- Build command APIs
+- Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)
+- Diminuir as ondas no curriculo
+- Melhorar o diálogo de contato
+- Criar uma variável global para pegar as cores de tags (sim, isso é sério)
+
+### Feature 2: Ficar chiquin
+- Mudar de js para ts
+- Opção de redução de animações
+- Usar pacotes de JS menores
+- Estudar e melhorar a UX/UI
+- Adicionar modulo de tradução
+- Adicionar mais informações de projetos
+
+### Feature 3: Backend (finalmente)
+- Conectar com backend
+- Puxar informação do backend no deploy
+- Melhorar Store e Diálogos
+
+### Feature 4: Detalhes pós (pós pós) launch 
+- Mapear com personas (KK) possíveis pontos para adicionar no portal
+- Modo Claro
+- Responsividade
+- versão mobile (isso com crtz vai quebrar em mais pontos)
+- Mudar para o Scroll aparecer acima da tela
+- Padronizar funções por meio de API interna
