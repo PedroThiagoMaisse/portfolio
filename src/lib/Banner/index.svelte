@@ -6,7 +6,8 @@
 
 
 	{#each array as element, i (element)}
-        <div class=hiddenDiv bind:this={element.elementText}>
+        <div class=hiddenDiv bind:this={element.elementText} >
+          <div class=bd on:click={() => expand(i)} />
           <h1>{element.title}</h1>
           <p>{element.text}</p>
           <ul>
@@ -122,16 +123,28 @@
     100%  {opacity: 0;z-index: -10;}
     }
 
+    .bd{
+        position: absolute;
+        left: -10vw;
+        top: -52px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.2);
+        z-index: -10
+    }
+
     main .hiddenDiv{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
         opacity: 0;
         animation-timing-function: ease-in-out;
         animation-duration: 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         z-index: -10;
-        top: 52px;
+        padding-top: 52px;
         position: absolute;
-        width: calc(100vw - 400px);
         font-size: 16px;
         font-family: 'Segoe UI';
         padding-left: 10vw;

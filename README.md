@@ -20,7 +20,7 @@ para dar o deploy direto para gitpages use:
 - ~Melhorar o ReadMe~
 - ~Adicionar listas com links, e tags dentro do banner~
 - Importar imagens para dentro do Banner
-- Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)
+- ~Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)~
 - Melhorar o texto dos banners
 - Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)
 - Diminuir as ondas no curriculo
