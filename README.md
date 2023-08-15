@@ -22,7 +22,10 @@ para dar o deploy direto para gitpages use:
 - Importar imagens para dentro do Banner
 - ~Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)~
 - Melhorar o texto dos banners
-- Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)
+- ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
+    nota atual: 94, 97, 100 100
+    - Page prevented back/forward cache restoration
+    -~ Cor do open source não tem contraste suficiente~
 - Diminuir as ondas no curriculo
 - Melhorar o diálogo de contato
 - Criar uma variável global para pegar as cores de tags (sim, isso é sério)

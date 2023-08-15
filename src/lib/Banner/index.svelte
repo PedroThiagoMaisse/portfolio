@@ -69,7 +69,7 @@
             ], 
             text: 'De tempos em tempos vem a necessidade ou vontade de criar uma ferramenta para auxiliar meu dia a dia ou facilitar algum fluxo, como:', 
             title: 'CLI e Ferramentas'},
-        {color: '#879694',list: [], text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
+        {color: '#495351',list: [], text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 
     let openCardId = -1
