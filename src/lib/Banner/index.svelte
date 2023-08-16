@@ -54,7 +54,7 @@
     const array = [
         {
             color: '#65706F', 
-            text: 'Com conhecimento sobre Diversos frameworks, o  meu trabalho sempre foi bem dividido entre diversas línguas e stacks, como:', 
+            text: 'Com uma bagagem em vários frameworks, minha atuação sempre foi bem diversificada, abrangendo várias linguagens e conjuntos de tecnologias, tipo:', 
             title: 'Desenvolvimento Web',
             list: [
                 {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'JS']},
@@ -67,9 +67,9 @@
                 {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
                 link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS']},
             ], 
-            text: 'De tempos em tempos vem a necessidade ou vontade de criar uma ferramenta para auxiliar meu dia a dia ou facilitar algum fluxo, como:', 
+            text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'CLI e Ferramentas'},
-        {color: '#495351',list: [], text: 'Com o intuito de ajudar sistemas públicos e ampliar meu conhecimento, tenho tido contribuições há alguns projetos OpenSource, como:', title: 'Contribuições Open Source'}
+        {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas públicas e enriquecer o meu conhecimento, tenho direcionado meu tempo para fazer contribuições em projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 
     let openCardId = -1
