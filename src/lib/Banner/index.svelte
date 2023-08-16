@@ -7,6 +7,7 @@
 
 	{#each array as element, i (element)}
         <div class=hiddenDiv bind:this={element.elementText} >
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
           <div class=bd on:click={() => expand(i)} />
           <h1>{element.title}</h1>
           <p>{element.text}</p>
