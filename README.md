@@ -28,7 +28,8 @@ para dar o deploy direto para gitpages use:
     -~ Cor do open source não tem contraste suficiente~
 - Diminuir as ondas no curriculo
 - Melhorar o diálogo de contato
-- Criar uma variável global para pegar as cores de tags (sim, isso é sério)
+- ~Criar uma variável global para pegar as cores de tags (sim, isso é sério)~
+- Juntar os projetos e ver se o componente precisa de algo
 
 ### Feature 2: Ficar chiquin
 - Mudar de js para ts

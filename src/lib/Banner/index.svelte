@@ -15,11 +15,7 @@
             {#each element.list as linha, i (linha)}
                 <li> 
                     <a href="{linha.link}" style="font-size: 15px"> {linha.text}  </a> 
-                    {#if linha.tags}
-                    {#each linha.tags as tag, i (tag)}
-                        <spam style="background-color: {tagColors[tag]}" class=tag> {tag} </spam>
-                    {/each}  
-                    {/if}
+                    <Tag tagArray="{linha.tags}"></Tag>
                     
                 </li>
             {/each}
@@ -45,6 +41,8 @@
 </main>
 
 <script>
+    import Tag from "../../globals/tag.svelte";
+
     const tagColors = {
         Svelte: '#F73C00',
         JS: '#D8B42D',

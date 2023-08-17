@@ -15,9 +15,7 @@
                     {item.text}
                 </p>
                 <div class="tags">
-                    {#each item.tags as tag (tag)}
-                        <p class="tag"> {tag} </p>
-                    {/each}
+                    <Tag tagArray="{item.tags}"></Tag>
                 </div>
                 <p class="projectName">
                     {item.name}
@@ -30,6 +28,7 @@
 </main>
 
 <script>
+    import Tag from '../../globals/tag.svelte';
     import OpenContact from '../Dialog/openContact.svelte';
 
     const projects = [
@@ -82,15 +81,7 @@
     .tags{
         display: flex;
         position: absolute;
-        bottom: 52px;
-    }
-
-    .tags p{
-        font-size: 16px;
-        border-radius: 8px;
-        margin-right: 16px;
-        background-color: brown;
-        padding: 6px;
+        bottom: 64px;
     }
 
     .projectList button{
