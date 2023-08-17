@@ -1,10 +1,10 @@
 <script lang="ts">
-import OpenContact from '../Dialog/openContact.svelte';
+    import Contact from '../../globals/contact.svelte';
 
 </script>
 
 <main>
-<OpenContact/>
+<Contact/>
 
 </main>
 

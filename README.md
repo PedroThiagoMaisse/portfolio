@@ -27,15 +27,19 @@ para dar o deploy direto para gitpages use:
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
 - Diminuir as ondas no curriculo
-- Melhorar o diálogo de contato
+- Achar algum jeito de hospedar as imagens das bubbles
+- ~Novo componente de bubbles para cada opção~
+- Modificar a Appbar para parte dela ficar emcima do conteúdo
 - ~Criar uma variável global para pegar as cores de tags (sim, isso é sério)~
 - Juntar os projetos e ver se o componente precisa de algo
+- Separar o Banner em +1 componente
 
 ### Feature 2: Ficar chiquin
 - Mudar de js para ts
 - Opção de redução de animações
 - Usar pacotes de JS menores
 - Estudar e melhorar a UX/UI
+    - Fundos / animações mais dinâmicos?
 - Adicionar modulo de tradução
 - Adicionar mais informações de projetos
 

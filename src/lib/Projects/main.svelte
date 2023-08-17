@@ -23,13 +23,10 @@
             </button>
         {/each}
     </div>
-
-    <OpenContact />
 </main>
 
 <script>
     import Tag from '../../globals/tag.svelte';
-    import OpenContact from '../Dialog/openContact.svelte';
 
     const projects = [
         {name: 'Esse portfólio (FE)', tags: ['Svelte', 'JS', 'GitPages'], img: '', text: 'Página construída em Svelte, com foco na usabilidade e rapidez'},

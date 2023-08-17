@@ -68,7 +68,7 @@
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'CLI e Ferramentas'},
-        {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas públicas e enriquecer o meu conhecimento, tenho direcionado meu tempo para fazer contribuições em projetos OpenSource, como:', title: 'Contribuições Open Source'}
+        {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas e enriquecer o meu conhecimento, tenho me direcionado para contribuir em projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 
     let openCardId = -1
