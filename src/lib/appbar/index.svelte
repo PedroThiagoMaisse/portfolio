@@ -4,20 +4,19 @@
 </script>
 
 <main>
-<Contact/>
+    <Contact/>
 
 </main>
 
 
 <style>
     main{
+        top: 0px;
+        position: absolute;
         padding: 8px;
         width: calc(100% - 16px);
         display: flex;
         justify-content: right;
-        background-color: #333;
-        height: 44px;
-        
     }
 
 

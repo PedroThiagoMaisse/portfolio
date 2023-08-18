@@ -55,9 +55,12 @@
 <style>
     main{
         display: flex;
+        margin-right:24px;
     }
 
     button{
+        box-shadow: 0px 0px 24px rgba(0,0,0,0.8);;
+        z-index: 20;
         margin-left: 16px;
         border-radius: 22px;
         background-color: #2a2a2a;

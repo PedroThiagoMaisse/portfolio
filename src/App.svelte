@@ -4,13 +4,11 @@
   import About from './lib/About/main.svelte'
   import Curriculum from './lib/Curriculum/main.svelte'
   import Projects from './lib/Projects/main.svelte'
-  import Dialog from './lib/Dialog/main.svelte'
 </script>
 
 <main>
-  <Dialog />
   <Appbar />
-  <div style=" padding: 0px; height: calc(100vh - 60px);overflow-y: auto; overflow-x: hidden; width: 100vw;">
+  <div style=" padding: 0px; height: 100vh;overflow-y: auto; overflow-x: hidden; width: 100vw;">
     <Banner />
     <About />
     <Curriculum />  
@@ -22,6 +20,7 @@
 <style>
 
   main{
+    position: relative;
     width: 100%;
     min-height: 100vh;
   }
