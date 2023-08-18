@@ -1,5 +1,5 @@
 <main>
-    <img src="{stackedWaves}" alt="stacked multi-color waves to segregate the section" />
+    <img src="{LayersTop}" alt="stacked multi-color waves to segregate the section" style="margin-bottom: -2px;"/>
     <div>
         <h1>
             Experiências de Trabalho Formais
@@ -20,12 +20,12 @@
         {/each}
     </div>
 
-    <img src="{stackedWavesOut}" alt="stacked multi-color waves to segregate the section" />
+    <img src="{LayersBot}" alt="stacked multi-color waves to segregate the section" style="margin-top: -2px;"/>
 </main>
 
 <script>
-    import stackedWaves from '../../assets/layered-waves.svg'
-    import stackedWavesOut from '../../assets/layered-waves-out.svg'
+    import LayersTop from '../../assets/layersTop.svg'
+    import LayersBot from '../../assets/layersBot.svg'
     
     const jobs = [
         {
@@ -89,7 +89,7 @@
     }
 
     main img{
-        aspect-ratio: 1280/300;
+        aspect-ratio: 1280/200;
         width: 100%;
     }
 
@@ -97,6 +97,7 @@
         margin-top: 16px;
         position: relative;
         width: 100%;
+        margin-bottom: 64px;
     }
 
 </style>

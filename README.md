@@ -27,7 +27,6 @@ para dar o deploy direto para gitpages use:
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
 - Diminuir as ondas no curriculo
-- Achar algum jeito de hospedar as imagens das bubbles
 - ~Novo componente de bubbles para cada opção~
 - ~Modificar a Appbar para parte dela ficar emcima do conteúdo~
 - ~Criar uma variável global para pegar as cores de tags (sim, isso é sério)~
@@ -44,6 +43,7 @@ para dar o deploy direto para gitpages use:
 - Adicionar mais informações de projetos
 
 ### Feature 3: Backend (finalmente)
+- Achar algum jeito de hospedar as imagens das bubbles
 - Conectar com backend
 - Puxar informação do backend no deploy
 - Melhorar Store e Diálogos
