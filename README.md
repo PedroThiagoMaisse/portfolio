@@ -26,11 +26,12 @@ para dar o deploy direto para gitpages use:
     nota atual: 94, 100, 100 100
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
-- Diminuir as ondas no curriculo
+- Bug de clicar no banner
+- ~Diminuir as ondas no curriculo~
 - ~Novo componente de bubbles para cada opção~
 - ~Modificar a Appbar para parte dela ficar emcima do conteúdo~
 - ~Criar uma variável global para pegar as cores de tags (sim, isso é sério)~
-- Juntar os projetos e ver se o componente precisa de algo
+- ~Juntar os projetos e ver se o componente precisa de algo~
 - Separar o Banner em +1 componente
 
 ### Feature 2: Ficar chiquin

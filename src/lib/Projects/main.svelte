@@ -10,7 +10,9 @@
                 background-image: linear-gradient( rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url('{item.img}')
             " 
             bind:this={item.element} 
-            aria-label="get more details from: {item.name}">
+            aria-label="get more details from: {item.name}"
+            on:click={() => window.open(item.link, "_blank")}
+            >
                 <p class="mainText">
                     {item.text}
                 </p>
@@ -29,9 +31,20 @@
     import Tag from '../../globals/tag.svelte';
 
     const projects = [
-        {name: 'Esse portfólio (FE)', tags: ['Svelte', 'JS', 'GitPages'], img: '', text: 'Página construída em Svelte, com foco na usabilidade e rapidez'},
-        {name: 'Esse portfólio (BE)', tags: ['Go', 'MongoDB'], img: '', text: 'O Backend (em construçao) para alimentar esta página'},
-        {name: 'CommitMapping', tags: ['Node', 'JS', 'NPX'], img: '', text: 'CLI para encontrar projetos dentro do disco e commitar eles para um projeto pública do gitHub'},
+        {
+            name: 'Esse portfólio', 
+            tags: ['Svelte', 'JS', 'GitPages', 'Go', 'MongoDB'], 
+            img: '', 
+            text: 'Página construída com foco na usabilidade e rapidez',
+            link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
+        },
+        {
+            name: 'CommitMapping', 
+            tags: ['Node', 'JS', 'NPX'], 
+            img: '', 
+            text: 'CLI para encontrar projetos dentro do disco e commitar eles para um projeto pública do gitHub',
+            link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
+        },
     ]
 
 	import { onMount } from 'svelte';
@@ -79,6 +92,8 @@
         display: flex;
         position: absolute;
         bottom: 64px;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
 
     .projectList button{

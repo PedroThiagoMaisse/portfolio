@@ -27,7 +27,8 @@
         padding: 4px 4px 4px 5px;
         font-size: 14px;
         margin-left: 8px;
-        border-radius: 4px
+        margin-bottom: 4px;
+        border-radius: 4px;
     }
 
 </style>
