@@ -41,6 +41,7 @@
 </main>
 
 <script>
+    import { select_option } from "svelte/internal";
     import Tag from "../../globals/tag.svelte";
 
     const tagColors = {
@@ -73,7 +74,11 @@
 
     let openCardId = -1
 
-    function expand(item) {
+    let onGoing = false
+
+    async function expand(item) {
+        if (onGoing) {return false}
+        onGoing = true
         const element = array[item]
         if(item === openCardId) {
             element.elementText.classList.remove('showText')
@@ -87,6 +92,8 @@
             element.elementText.classList.add('showText')
             element.element.classList.add('no')
         }
+        await new Promise(r => setTimeout(r, 1000))
+        onGoing = false
     }
 </script>
 

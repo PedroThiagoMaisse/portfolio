@@ -26,7 +26,7 @@ para dar o deploy direto para gitpages use:
     nota atual: 94, 100, 100 100
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
-- Bug de clicar no banner
+- ~Bug de clicar no banner~
 - ~Diminuir as ondas no curriculo~
 - ~Novo componente de bubbles para cada opção~
 - ~Modificar a Appbar para parte dela ficar emcima do conteúdo~
