@@ -23,9 +23,11 @@ para dar o deploy direto para gitpages use:
 - ~Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)~
 - ~Melhorar o texto dos banners~
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
-    nota atual: 94, 100, 100 100
+    nota atual: 92, 100, 100, 100
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
+    -~Diminuir tamanho das imagens~
+    -~Aspect Ratio das imagens~
 - ~Bug de clicar no banner~
 - ~Diminuir as ondas no curriculo~
 - ~Novo componente de bubbles para cada opção~
