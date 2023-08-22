@@ -36,7 +36,8 @@
             Tasks: [
                 "Atuei como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
                 "Atuei como Scrum Master em uma squad responsável por chatbots, somando 1,2M de Mensagens mensais",
-                "Criei de uma CLI/Framework para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
+                "Criei de uma CLI para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
+                "Desenvolvi conexões entre BI, SAP, SalesForce e DataBricks e criei uma página para o acompanhamento de metas da diretoria Tech"
             ]
         },
         {

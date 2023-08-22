@@ -6,7 +6,7 @@
                 width="40px" 
                 height="40px" 
                 src="{element.img}"
-                style='scale: {element.scale}'
+                style='scale: {element.scale}; margin-top: {element.topOffset}'
                 alt="{element.text}"/> 
             {:else}
                 {element.text}
@@ -38,6 +38,7 @@
         
         {
             text: "GitHub",
+            topOffset: '-0.5px',
             link: "https://github.com/PedroThiagoMaisse",
             img: img_git
         },

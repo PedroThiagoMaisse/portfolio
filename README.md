@@ -17,17 +17,18 @@ para dar o deploy direto para gitpages use:
 ## Melhorias mapeadas
 
 ### Feature 1: O básico
-- ~Melhorar o ReadMe~
-- ~Adicionar listas com links, e tags dentro do banner~
+- Banner img
 - Importar imagens para dentro do Banner
-- ~Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)~
-- ~Melhorar o texto dos banners~
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
     nota atual: 92, 100, 100, 100
     - Page prevented back/forward cache restoration
     -~ Cor do open source não tem contraste suficiente~
     -~Diminuir tamanho das imagens~
     -~Aspect Ratio das imagens~
+- ~Melhorar o ReadMe~
+- ~Adicionar listas com links, e tags dentro do banner~
+- ~Adicionar um gradiante nas imagens do banner para facilitar a leitura (ou uma layer cinza)~
+- ~Melhorar o texto dos banners~
 - ~Bug de clicar no banner~
 - ~Diminuir as ondas no curriculo~
 - ~Novo componente de bubbles para cada opção~
@@ -35,6 +36,7 @@ para dar o deploy direto para gitpages use:
 - ~Criar uma variável global para pegar as cores de tags (sim, isso é sério)~
 - ~Juntar os projetos e ver se o componente precisa de algo~
 - ~Separar o Banner em +1 componente~
+- ~Rever o visual geral da page~
 
 ### Feature 2: Ficar chiquin
 - Mudar de js para ts

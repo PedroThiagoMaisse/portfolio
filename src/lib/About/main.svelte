@@ -59,6 +59,7 @@
         width: 360px;
         color: white;
         font-weight: 200;
+        font-size: 12px;
         font-family: 'Segoe UI';
         
     }

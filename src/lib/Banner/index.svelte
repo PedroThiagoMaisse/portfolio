@@ -1,7 +1,8 @@
 <main>
     <div class="bg">
-        Be aware that this is under construction! <br>
-        Any Bug or improvement can be direct to <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a>
+        Atenção, esse site ainda está em construção! <br>
+        Qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a>
+        Etapa até o release da primeira versão real oficial: 12/15
     </div>
 
 
