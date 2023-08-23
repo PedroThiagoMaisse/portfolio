@@ -1,15 +1,18 @@
 <main>
     <div class="bg">
-        Atenção, esse site ainda está em construção! <br>
-        Qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a>
-        Etapa até o release da primeira versão real oficial: 12/15
+        Bem vindo à um pedacinho do que eu faço,<br>
+        qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a> <br>
+         <spam style="font-size: 12px;"> Passos até o release da próxima versão: 13/15 </spam>
     </div>
-
+    <img src="{BannerBlob}" alt="A blue wave in a grey background" style="position: absolute; left: 500px; z-index: -20">
+    <img src="{BannerBlobin}" alt="A blue wave in a grey background" style="position: absolute; left: 250px; z-index: -20">
 
 	<Clickables callout={array}></Clickables>
 </main>
 
 <script>
+    import BannerBlob from '../../assets/Banner/banner-blob.svg'
+    import BannerBlobin from '../../assets/Banner/banner-blobin.svg'
     import Clickables from "./clickables.svelte";
 
     const array = [
@@ -38,11 +41,11 @@
 <style>
     .bg{
         text-align: center;
-        padding-top: 160px;
-        background-image: 
+        padding-top: 190px;
+        background-image:
         linear-gradient(
         rgba(0, 0, 0, 0) 60%, 
-        rgba(0, 0, 0, 0.9) 100%
+        rgba(0, 0, 0, 0.4) 100%
         );
         z-index: -2;
         position: absolute;

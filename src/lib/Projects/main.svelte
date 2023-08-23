@@ -133,10 +133,4 @@
         filter: blur(0);
         transform: translateX(0);
     }
-
-    .contact{
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgba(255, 255, 255, 0.3);
-    }
 </style>

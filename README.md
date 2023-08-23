@@ -17,7 +17,7 @@ para dar o deploy direto para gitpages use:
 ## Melhorias mapeadas
 
 ### Feature 1: O básico
-- Banner img
+- ~Banner img~
 - Importar imagens para dentro do Banner
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
     nota atual: 92, 100, 100, 100
@@ -39,6 +39,7 @@ para dar o deploy direto para gitpages use:
 - ~Rever o visual geral da page~
 
 ### Feature 2: Ficar chiquin
+- Animate blobs
 - Mudar de js para ts
 - Opção de redução de animações
 - Usar pacotes de JS menores
