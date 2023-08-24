@@ -2,7 +2,7 @@
     <div class="bg">
         Bem vindo à um pedacinho do que eu faço,<br>
         qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a> <br>
-         <spam style="font-size: 12px;"> Passos até o release da próxima versão: 13/15 </spam>
+         <spam style="font-size: 12px;"> Passos até o release da próxima versão: 14/15 </spam>
     </div>
     <img src="{BannerBlob}" alt="A blue wave in a grey background" style="position: absolute; left: 500px; z-index: -20">
     <img src="{BannerBlobin}" alt="A blue wave in a grey background" style="position: absolute; left: 250px; z-index: -20">
@@ -32,7 +32,7 @@
                 link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS']},
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
-            title: 'CLI e Ferramentas'},
+            title: 'Command Line Tools'},
         {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas e enriquecer o meu conhecimento, tenho me direcionado para contribuir em projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 </script>
@@ -50,7 +50,7 @@
         z-index: -2;
         position: absolute;
         width: 100%;
-        height: calc(560px - 160px);
+        height: calc(560px - 190px);
     }
 
     main{

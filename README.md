@@ -20,8 +20,8 @@ para dar o deploy direto para gitpages use:
 - ~Banner img~
 - Importar imagens para dentro do Banner
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
-    nota atual: 92, 100, 100, 100
-    - Page prevented back/forward cache restoration
+    nota atual: 100, 100, 100, 100
+    -~Page prevented back/forward cache restoration - resolvido quando foi pro git~
     -~ Cor do open source não tem contraste suficiente~
     -~Diminuir tamanho das imagens~
     -~Aspect Ratio das imagens~
@@ -39,6 +39,7 @@ para dar o deploy direto para gitpages use:
 - ~Rever o visual geral da page~
 
 ### Feature 2: Ficar chiquin
+- Trazer o resultado do lighthouse
 - Limpar o código do Banner pelo amor
 - Animate blobs
 - Mudar de js para ts
@@ -48,6 +49,7 @@ para dar o deploy direto para gitpages use:
     - Fundos / animações mais dinâmicos?
 - Adicionar modulo de tradução
 - Adicionar mais informações de projetos
+- Rever lighthouse
 
 ### Feature 3: Backend (finalmente)
 - Achar algum jeito de hospedar as imagens das bubbles
