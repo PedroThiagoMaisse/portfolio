@@ -37,6 +37,7 @@ para dar o deploy direto para gitpages use:
 - ~Juntar os projetos e ver se o componente precisa de algo~
 - ~Separar o Banner em +1 componente~
 - ~Rever o visual geral da page~
+- Limpar outras coisas
 
 ### Feature 2: Ficar chiquin
 - Trazer o resultado do lighthouse
