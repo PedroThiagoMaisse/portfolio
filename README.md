@@ -39,6 +39,7 @@ para dar o deploy direto para gitpages use:
 - ~Rever o visual geral da page~
 
 ### Feature 2: Ficar chiquin
+- Limpar o código do Banner pelo amor
 - Animate blobs
 - Mudar de js para ts
 - Opção de redução de animações

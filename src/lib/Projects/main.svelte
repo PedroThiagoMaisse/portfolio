@@ -42,7 +42,7 @@
             name: 'CommitMapping', 
             tags: ['Node', 'JS', 'NPX'], 
             img: '', 
-            text: 'CLI para encontrar projetos dentro do disco e commitar eles para um projeto pública do gitHub',
+            text: 'CLI para encontrar projetos dentro do disco e commitar eles para um projeto público do gitHub',
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
         },
     ]
