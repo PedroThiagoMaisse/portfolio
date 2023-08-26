@@ -33,10 +33,17 @@
     const projects = [
         {
             name: 'Esse portfólio', 
-            tags: ['Svelte', 'JS', 'GitPages', 'Go', 'MongoDB'], 
+            tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
             text: 'Página construída com foco na usabilidade e rapidez',
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
+        },
+        {
+            name: 'Morgan', 
+            tags: ['Svelte', 'JS', 'Tauri', 'MongoDB', 'Go'], 
+            img: '', 
+            text: 'Um jeito de unificar minhas informações em apenas um lugar',
+            link: 'https://github.com/PedroThiagoMaisse/MOrgan'
         },
         {
             name: 'CommitMapping', 
@@ -92,7 +99,7 @@
         display: flex;
         position: absolute;
         bottom: 64px;
-        max-width: 100%;
+        max-width: 80%;
         flex-wrap: wrap;
     }
 

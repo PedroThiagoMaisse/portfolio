@@ -10,7 +10,7 @@
     <div class="textColumn">
         <h1> Eu </h1>
         <p> Desenvolvedor Pleno com um tiquinho de conhecimento sobre gestão de projeto, artes gráficas, literatura, música e matemática. 
-            A maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiar.</p>
+            A maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiando.</p>
         <h1> Engenharia </h1>
         <p>  Por influência dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a decisão de sempre me atualizar sobre Design Patternns, Stacks, linguagens e sistemas totalmente novos.</p>
         <h1 class="quote" style="margin-top: 42px"> "... excelente líder, motivador, põe a mão na massa para descomplicar qualquer conceito como DEV." </h1>
@@ -26,7 +26,7 @@
 
 <style>
     h1.quote{
-        font-size: 30px;
+        font-size: 26px;
     }
     .quote{
         text-align: right !important;
@@ -39,7 +39,7 @@
         left: 48px;
         text-align: left;
         margin-bottom: 0px;
-        margin-top: 32px;
+        margin-top: 28px;
     }
 
     .textColumn p{
@@ -48,7 +48,7 @@
         position: relative;
         padding: 16px;
         text-align: left;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .imageDiv p{
@@ -59,15 +59,15 @@
         width: 360px;
         color: white;
         font-weight: 200;
-        font-size: 12px;
+        font-size: 10px;
         font-family: 'Segoe UI';
         
     }
 
     .imageDiv{
         position: relative;
-        left: calc(50% - 200px);
-        top: 125px;
+        left: calc(60% - 200px);
+        top: 145px;
         transform: rotate3d(0, 1, -0.1, 15deg);
     }
 
@@ -96,8 +96,9 @@
     }
 
     .textColumn{
+        margin-left: 5%;
         padding-top: 24px;
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
 

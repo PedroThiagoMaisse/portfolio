@@ -6,7 +6,7 @@
         <p>{element.text}</p>
         <ul>
         {#each element.list as linha, i (linha)}
-            <li> 
+            <li style="padding-top: 4px; padding-bottom: 4px"> 
                 <a href="{linha.link}" style="font-size: 15px"> {linha.text}  </a> 
                 <Tag tagArray="{linha.tags}"></Tag>
                 
