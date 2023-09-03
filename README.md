@@ -56,6 +56,7 @@ para dar o deploy direto para gitpages use:
     - Opção para redução as animações
     - Mais animações / fundos mais dinâmicos?
     - Aviso de redirect
+    - Avisos na tela já
     
 - Mudar de js para ts
 ### Feature 3: Backend (finalmente)
