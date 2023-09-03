@@ -11,8 +11,8 @@
 </main>
 
 <script>
-    import BannerBlob from '../../assets/Banner/banner-blob.svg'
-    import BannerBlobin from '../../assets/Banner/banner-blobin.svg'
+    import BannerBlob from '../../assets/banner-blob.svg'
+    import BannerBlobin from '../../assets/banner-blobin.svg'
     import Clickables from "./clickables.svelte";
 
     const array = [
@@ -36,7 +36,7 @@
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'Tooling'},
-        {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas e enriquecer o meu conhecimento, tenho me direcionado para contribuir em projetos OpenSource, como:', title: 'Contribuições Open Source'}
+        // {color: '#495351',list: [], text: 'Com o propósito de auxiliar bibliotecas e enriquecer o meu conhecimento, tenho me direcionado para contribuir em projetos OpenSource, como:', title: 'Contribuições Open Source'}
     ]
 </script>
 
