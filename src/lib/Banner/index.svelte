@@ -11,8 +11,8 @@
 </main>
 
 <script>
-    import BannerBlob from '../../assets/banner-blob.svg'
-    import BannerBlobin from '../../assets/banner-blobin.svg'
+    import BannerBlob from '../../assets/banner/banner-blob.svg'
+    import BannerBlobin from '../../assets/banner/banner-blobin.svg'
     import Clickables from "./clickables.svelte";
 
     const array = [
@@ -23,7 +23,7 @@
             list: [
                 {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'JS']},
                 {text: 'BRFCode, uma plataforma para auxiliar na validação em entregas;', link: 'https://BRFCode.com', tags: ['JS', 'Vue', 'Node']},
-                {text: 'MOrgan, um app de organização pessoal meu;', link: 'https://github.com/PedroThiagoMaisse/MOrgan', tags: ['Svelte','JS', 'Tauri']}
+                {text: 'MOrgan, um app de organização pessoal meu;', link: 'https://pedrothiagomaisse.github.io/MOrgan/', tags: ['Svelte','JS', 'Tauri']}
             ]
         },
         {
@@ -31,8 +31,6 @@
             list: [
                 {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
                 link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS']},
-                {text: 'MOrgan (BackEnd), um serviço geral para a maioria das minhas infos;', link: 'https://github.com/PedroThiagoMaisse/MOrgan_BE', tags: ['Go', 'MongoDB']}
-            
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'Tooling'},
