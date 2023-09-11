@@ -27,7 +27,7 @@
     </div>
 </main>
 
-<script>
+<script lang="ts">
     import Tag from '../../globals/tag.svelte';
 
     const projects = [

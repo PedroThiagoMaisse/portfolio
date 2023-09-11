@@ -29,7 +29,7 @@
     <img src="{LayersBot}" alt="stacked multi-color waves to segregate the section" style="margin-top: -2px;"/>
 </main>
 
-<script>
+<script lang="ts">
     import LayersTop from '../../assets/layersTop.svg'
     import LayersBot from '../../assets/layersBot.svg'
     

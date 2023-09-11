@@ -19,7 +19,7 @@
     </div>
 </main>
 
-<script>
+<script lang="ts">
     
 </script>
 

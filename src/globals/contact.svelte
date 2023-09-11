@@ -15,7 +15,7 @@
     {/each}
 </main>
 
-<script>
+<script lang="ts">
     import img_linkedin from '../assets/contact/in.png'
     import img_git from '../assets/contact/git.png'
     import img_x from '../assets/contact/x.png'

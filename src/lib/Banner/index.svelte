@@ -2,7 +2,7 @@
     <div class="bg">
         Bem vindo à um pedacinho do que eu faço,<br>
         Qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a> <br>
-         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>; passos até o próximo update: 0/5 </spam>
+         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>; passos até o próximo update: 1/5 </spam>
     </div>
     <img src="{BannerBlob}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 200px); z-index: -20">
     <img src="{BannerBlobin}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 450px); z-index: -20">
@@ -10,7 +10,7 @@
 	<Clickables callout={array}></Clickables>
 </main>
 
-<script>
+<script lang="ts">
     import BannerBlob from '../../assets/banner/banner-blob.svg'
     import BannerBlobin from '../../assets/banner/banner-blobin.svg'
     import Clickables from "./clickables.svelte";

@@ -28,7 +28,7 @@
     </button>
 {/each}
 
-<script>
+<script lang="ts">
     export let callout
     import Tag from "../../globals/tag.svelte";
 

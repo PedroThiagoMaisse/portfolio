@@ -6,7 +6,7 @@
 {/if}
 
 
-<script>
+<script lang="ts">
     export let tagArray
 
     const tagColors = {

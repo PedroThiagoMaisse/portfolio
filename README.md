@@ -58,7 +58,7 @@ para dar o deploy direto para gitpages use:
     - Aviso de redirect
     - Avisos na tela já
     
-- Mudar de js para ts
+- ~Mudar de js para ts~
 ### Feature 3: Backend (finalmente)
 - Achar algum jeito de hospedar as imagens das bubbles
 - Conectar com backend
