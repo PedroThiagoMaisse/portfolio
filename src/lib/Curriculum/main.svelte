@@ -13,7 +13,13 @@
                 </p>
                 <ul>
                 {#each element.Tasks as line}
-                    <li> {line} </li>
+                    {#if typeof line === 'object'}
+                        <a href="{line.link}">
+                            <li style="margin-left: 16px;color: -webkit-link"> {line.text} </li>
+                        </a>
+                    {:else}
+                        <li> {line} </li>
+                    {/if}
                 {/each}
                 </ul>
             </div>
@@ -34,10 +40,15 @@
             Start: "2023",
             End: "Atual",
             Tasks: [
+                "Atuei como Scrum Master no CoE responsável pelos chatbots da empresa, somando 1,7M de Mensagens mensais, destaques:",
+                {link: "https://blog.flashapp.com.br/think-work-flash-innovations-vencedores", text: "Theo recebe prêmio de inovação em atração e seleção;"},
+                {link: "https://tiinside.com.br/31/03/2022/brf-avanca-na-jornada-digital-e-leva-assistente-virtual-para-oriente-medio/", text: "Flor é internacionalizada para atender países do Oriente Médio;"},
+                {link: "https://www.linkedin.com/posts/brf_brf-nossapartepelotodo-inova%C3%A7%C3%A3o-activity-7013978684780916736-AlwE/?originalSubdomain=pt", text: "Flor é reconhecida pela Organização para a Cooperação e Desenvolvimento Econômico (OCDE);"},
+                {link: "https://revista.consumidormoderno.com.br/premio-cm-2022-empresas-vencedoras/edicao-271/", text: "BRF ganha o prémio consumidor moderno 2022, com menção em seu discurso para os chatbots;"},
+                {link: "https://inforchannel.com.br/2021/04/06/assistente-virtual-da-brf-fortalece-interacoes-com-clientes-da-sadia/", text: "Assistente virtual da BRF fortalece interações com os clientes da Sadia."},
                 "Atuei como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
-                "Atuei como Scrum Master em uma squad responsável por chatbots, somando 1,2M de Mensagens mensais",
                 "Criei uma ferramenta de linha de comando para a padronização do desenvolvimento de componentes React para PowerBi e Sharepoint",
-                "Desenvolvi conexões entre BI, SAP, SalesForce e DataBricks e criei uma página para o acompanhamento de metas da diretoria Tech"
+                "Desenvolvi conexões entre BI, SAP e SalesForce e criei uma solução para o acompanhamento de metas da diretoria"
             ]
         },
         {
@@ -76,7 +87,8 @@
 
     .workCard{
         margin: auto;
-        width: 600px;
+        min-width: 600px;
+        max-width: 40%;
         text-align: left;
     }
 

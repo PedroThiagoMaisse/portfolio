@@ -40,7 +40,7 @@
         },
         {
             name: 'Morgan', 
-            tags: ['Svelte', 'JS', 'Tauri', 'MongoDB', 'Go'], 
+            tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
             text: 'Um jeito de unificar minhas informações em apenas um lugar',
             link: 'https://github.com/PedroThiagoMaisse/MOrgan'
