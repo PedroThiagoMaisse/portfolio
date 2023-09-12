@@ -1,7 +1,6 @@
 {#each callout as element, i (element)}
     <div class=hiddenDiv bind:this={element.elementText} >
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class=bd on:click={() => expand(i)} />
+        <button class=bd on:click={() => expand(i)} />
         <h1>{element.title}</h1>
         <p>{element.text}</p>
         <ul>
@@ -31,9 +30,7 @@
 <script lang="ts">
     export let callout
     import Tag from "../../globals/tag.svelte";
-
     let openCardId = -1
-
     let onGoing = false
 
     async function expand(item) {
@@ -43,50 +40,26 @@
         if(item === openCardId) {
             element.elementText.classList.remove('showText')
             element.elementText.classList.add('hideText')
+            element.element.classList.remove('animationOpenTrigger')
+            element.element.classList.add('animationCloseTrigger')
+            
             openCardId = -1
-            element.element.classList.remove('no')
-            element.element.classList.add('yes')
         } else {
             openCardId = item
             element.element.classList.remove('hideText')
             element.elementText.classList.add('showText')
-            element.element.classList.add('no')
+            element.element.classList.remove('animationCloseTrigger')
+            element.element.classList.add('animationOpenTrigger')
         }
-        await new Promise(r => setTimeout(r, 1000))
+        await new Promise(r => setTimeout(r, 1000)) // Wait for the animation
         onGoing = false
     }
 </script>
 
 
 <style>
-    .tag{
-        text-align: center;
-        line-height: 100%;
-        padding: 4px 4px 4px 5px;
-        font-size: 14px;
-        margin-left: 8px;
-        border-radius: 4px
-
-    }
-
-    .showText{
-        animation-name: showTxt !important;
-    }
-
-    @keyframes showTxt {
-    0%   {z-index: 4;}
-    50%  {opacity: 0;z-index: 4;}
-    100%  {opacity: 1;z-index: 4;}
-    }
-
-    .hideText{
-        animation-name: hideTxt;
-    }
-
-    @keyframes hideTxt {
-    0%   {opacity: 1;z-index: 4;}
-    50%  {opacity: 0;z-index: 4;}
-    100%  {opacity: 0;z-index: -10;}
+    p, li{
+        margin-right: 120px;
     }
 
     .bd{
@@ -114,27 +87,8 @@
         font-size: 16px;
         font-family: 'Segoe UI';
         padding-left: 10vw;
+        padding-right: 10vw;
         text-align: left;
-    }
-
-    @keyframes example {
-    0%   {height: 160px; width: 160px; z-index: 2;}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; color: rgba(255,255,255,0.5)}
-    100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;  color: rgba(255,255,255,0)}
-    }
-
-    @keyframes example2 {
-    0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;color: rgba(255,255,255,0.5)}
-    100%  {width: 160px; height: 160px; z-index: 1;}
-    }
-
-    .yes{
-        animation-name: example2 !important;
-    }
-
-    .no{
-        animation-name: example !important;
     }
 
     .card{
@@ -150,17 +104,45 @@
         margin-right: 16px;
     }
 
-    .bg{
-        text-align: center;
-        padding-top: 160px;
-        background-image: 
-        linear-gradient(
-        rgba(0, 0, 0, 0) 60%, 
-        rgba(0, 0, 0, 0.9) 100%
-        );
-        z-index: -2;
-        position: absolute;
-        width: 100%;
-        height: calc(560px - 160px);
+    /* ANIMATION */
+
+    .hideText{
+        animation-name: hideTxt;
+    }
+
+    @keyframes hideTxt {
+    0%   {opacity: 1;z-index: 4;}
+    50%  {opacity: 0;z-index: 4;}
+    100%  {opacity: 0;z-index: -10;}
+    }
+
+    .showText{
+        animation-name: showTxt !important;
+    }
+
+    @keyframes showTxt {
+    0%   {z-index: 4;}
+    50%  {opacity: 0;z-index: 4;}
+    100%  {opacity: 1;z-index: 4;}
+    }
+
+    .animationOpenTrigger{
+        animation-name: animationOpen !important;
+    }
+
+    @keyframes animationOpen {
+    0%   {height: 160px; width: 160px; z-index: 2;}
+    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; color: rgba(255,255,255,0.5)}
+    100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;  color: rgba(255,255,255,0)}
+    }
+
+    .animationCloseTrigger{
+        animation-name: animationClose !important;
+    }
+
+    @keyframes animationClose {
+    0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
+    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;color: rgba(255,255,255,0.5)}
+    100%  {width: 160px; height: 160px; z-index: 1;}
     }
 </style>

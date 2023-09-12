@@ -45,9 +45,9 @@ para dar o deploy direto para gitpages use:
 
 - Tradução da Page
 
-- Limpar / Organizar o código
-    - Banner
-    - Adicionar mais infos de outros projetos
+- ~Limpar / Organizar o código~
+    - ~Banner~
+    - ~Adicionar mais infos de outros projetos (já havia feito)~
 
 - Melhorias em UX / UI
     - Fireworks quando é a primeira visita da pessoa após um novo release

@@ -2,7 +2,7 @@
     <div class="bg">
         Bem vindo à um pedacinho do que eu faço,<br>
         Qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a> <br>
-         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>; passos até o próximo update: 1/5 </spam>
+         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>; passos até o próximo update: 2/5 </spam>
     </div>
     <img src="{BannerBlob}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 200px); z-index: -20">
     <img src="{BannerBlobin}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 450px); z-index: -20">
@@ -21,7 +21,7 @@
             text: 'Com uma bagagem em vários frameworks, minha atuação sempre foi bem diversificada, abrangendo várias linguagens e conjuntos de tecnologias, tipo:', 
             title: 'Desenvolvimento Web',
             list: [
-                {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'JS']},
+                {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'TS']},
                 {text: 'BRFCode, uma plataforma para auxiliar na validação em entregas;', link: 'https://BRFCode.com', tags: ['JS', 'Vue', 'Node']},
                 {text: 'MOrgan, um app de organização pessoal meu;', link: 'https://pedrothiagomaisse.github.io/MOrgan/', tags: ['Svelte','JS']}
             ]
