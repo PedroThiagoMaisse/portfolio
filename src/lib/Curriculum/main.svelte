@@ -14,9 +14,9 @@
                 <ul>
                 {#each element.Tasks as line}
                     {#if typeof line === 'object'}
-                        <a href="{line.link}">
-                            <li style="margin-left: 16px;color: -webkit-link"> {line.text} </li>
-                        </a>
+                        <li style="margin-left: 16px;color: rgb(68, 68, 165)"> 
+                            <a href="{line.link}" style="color: inherit">{line.text}</a> 
+                        </li>
                     {:else}
                         <li> {line} </li>
                     {/if}

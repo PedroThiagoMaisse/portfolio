@@ -9,6 +9,21 @@
   </head>
   <body>
     <div id="app"></div>
+    <script type="module">
+      import {partytownSnippet} from '@builder.io/partytown/integration'
+      const snippetText = partytownSnippet()
+      const el = document.createElement('script')
+      el.innerText = snippetText
+      document.body.appendChild(el)
+    </script>
+     <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=GTM-TXHZS686"></script>
+     <script type="text/partytown">
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+   
+       gtag('config', 'GTM-TXHZS686');
+     </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 

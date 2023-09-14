@@ -41,7 +41,9 @@ para dar o deploy direto para gitpages use:
 ### Feature 2: Ficar chiquin
 - Pacotes / Tooling
     - Lighthouse integration (mostrar os resultados)
-    - treeShaker (diminuir o tamanho dos pacotes)
+    - ~Google Tags~
+    - ~Party Town~
+    - Diminuir o tamanho dos pacotes
 
 - Tradução da Page
 

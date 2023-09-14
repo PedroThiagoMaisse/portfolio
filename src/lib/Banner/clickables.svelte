@@ -1,6 +1,6 @@
 {#each callout as element, i (element)}
-    <div class=hiddenDiv bind:this={element.elementText} >
-        <button class=bd on:click={() => expand(i)} />
+    <div class=hiddenDiv bind:this={element.elementText}>
+        <button class=bd on:click={() => expand(i)}  aria-label="toggle {element.text}"/>
         <h1>{element.title}</h1>
         <p>{element.text}</p>
         <ul>

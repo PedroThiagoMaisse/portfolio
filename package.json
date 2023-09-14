@@ -20,6 +20,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.8.1",
     "gh-pages": "^5.0.0"
   }
 }
