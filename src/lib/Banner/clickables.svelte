@@ -28,12 +28,20 @@
 {/each}
 
 <script lang="ts">
-    export let callout
-    import Tag from "../../globals/tag.svelte";
+    interface element {
+        element: any,
+        elementText: HTMLDivElement,
+        text: string,
+        color: string,
+        title: string,
+        list: Array<{text: string, tags: Array<string>, link: string}>
+    }
+    export let callout: Array<element>
+    import Tag from "../globals/tag.svelte";
     let openCardId = -1
     let onGoing = false
 
-    async function expand(item) {
+    async function expand(item:number) {
         if (onGoing) {return false}
         onGoing = true
         const element = callout[item]

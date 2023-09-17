@@ -17,6 +17,7 @@ para dar o deploy direto para gitpages use:
 ## Melhorias mapeadas
 
 ### Feature 1: O básico
+<details>
 - ~Banner img~
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~
     nota atual: 100, 100, 100, 100
@@ -37,13 +38,16 @@ para dar o deploy direto para gitpages use:
 - ~Separar o Banner em +1 componente~
 - ~Rever o visual geral da page~
 - ~Limpar outras coisas~
+</details>
 
 ### Feature 2: Ficar chiquin
 - Pacotes / Tooling
     - Lighthouse integration (mostrar os resultados)
     - ~Google Tags~
     - ~Party Town~
+    - Resolver o problema de import com o vite
     - Diminuir o tamanho dos pacotes
+    - SvelteKit
 
 - Tradução da Page
 

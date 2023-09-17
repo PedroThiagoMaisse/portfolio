@@ -57,7 +57,7 @@
             Start: "2021",
             End: "2022",
             Tasks: [
-                "Arquitetei e Construi soluções utilizando Node TS, React, Vue e C# com conexões com sistemas SAP e SalesForce",
+                "Arquitetei e Construi soluções utilizando node TS, React, Vue e C# com conexões com sistemas SAP e SalesForce",
                 "Mentorei 20+ estagiários",
                 "Auxiliei a squad responsável pelos chatbots da empresa em questões pontuais"
             ]

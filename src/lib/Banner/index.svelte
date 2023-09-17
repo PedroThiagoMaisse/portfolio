@@ -16,12 +16,12 @@
     import Clickables from "./clickables.svelte";
 
     const array = [
-        {
+        { 
             color: '#65706F', 
             text: 'Com uma bagagem em vários frameworks, minha atuação sempre foi bem diversificada, abrangendo várias linguagens e conjuntos de tecnologias, tipo:', 
             title: 'Desenvolvimento Web',
             list: [
-                {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['Svelte', 'TS']},
+                {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['SvelteKit', 'TS']},
                 {text: 'BRFCode, uma plataforma para auxiliar na validação em entregas;', link: 'https://BRFCode.com', tags: ['JS', 'Vue', 'Node']},
                 {text: 'MOrgan, um app de organização pessoal meu;', link: 'https://pedrothiagomaisse.github.io/MOrgan/', tags: ['Svelte','JS']}
             ]
@@ -30,7 +30,7 @@
             color: '#697065',
             list: [
                 {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
-                link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS']},
+                link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['node', 'JS']},
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'Tooling'},
