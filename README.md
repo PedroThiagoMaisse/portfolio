@@ -43,8 +43,8 @@ para dar o deploy direto para gitpages use:
 ### Feature 2: Ficar chiquin
 - Pacotes / Tooling
     - Lighthouse integration (mostrar os resultados)
-    - ~Google Tags~
-    - ~Party Town~
+    - Google Tags (terei que refazer)
+    - Party Town (terei que refazer)
     - Resolver o problema de import com o vite
     - Diminuir o tamanho dos pacotes
     - SvelteKit

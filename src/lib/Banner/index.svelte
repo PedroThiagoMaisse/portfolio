@@ -30,7 +30,7 @@
             color: '#697065',
             list: [
                 {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
-                link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['node', 'JS']},
+                link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['node', 'JS', 'GitHub Actions']},
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
             title: 'Tooling'},

@@ -47,9 +47,9 @@
         },
         {
             name: 'CommitMapping', 
-            tags: ['Node', 'JS', 'NPX'], 
+            tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
-            text: 'Ferramenta para encontrar projetos dentro do disco e commitar eles para um projeto público do gitHub',
+            text: 'Ferramenta para mapear commits de projetos dentro do disco e commitar eles em outro projeto',
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
         },
     ]
