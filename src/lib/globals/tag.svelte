@@ -14,9 +14,14 @@
         Svelte: '#F73C00',
         SvelteKit: '#F73C00',
         TS: '#333395',
-        JS: '#D8B42D',
-        Node: '#D8B42D',
-        Vue: '#4BB483'
+        JS: '#caa829',
+        Node: '#caa829',
+        Vue: '#4BB483',
+        AWS: '#e28000',
+        Lambda: '#e28000',
+        Python: '#1b3652',
+        Serveless: '#be4a45',
+        Azure: '#1066b3'
     }
 </script>
 
