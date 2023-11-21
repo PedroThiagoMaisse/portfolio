@@ -41,6 +41,7 @@ para dar o deploy direto para gitpages use:
 </details>
 
 ### Feature 2: Ficar chiquin
+- Arrumar os métodos de deploy
 - Pacotes / Tooling
     - Lighthouse integration (mostrar os resultados)
     - Google Tags (terei que refazer)
