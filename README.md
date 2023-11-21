@@ -41,7 +41,7 @@ para dar o deploy direto para gitpages use:
 </details>
 
 ### Feature 2: Ficar chiquin
-- Arrumar os métodos de deploy
+~- Arrumar os métodos de deploy~
 - Pacotes / Tooling
     - Lighthouse integration (mostrar os resultados)
     - Google Tags (terei que refazer)
@@ -49,6 +49,7 @@ para dar o deploy direto para gitpages use:
     - Resolver o problema de import com o vite
     - Diminuir o tamanho dos pacotes
     - SvelteKit
+    - Automatizar o deploy pelo Git Actions
 
 - Tradução da Page
 
