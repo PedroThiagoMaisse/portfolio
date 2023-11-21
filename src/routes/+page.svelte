@@ -1,5 +1,5 @@
 <script>
-    export const prerender = true;
+    import './app.css';
     import Appbar from '../lib/appbar/index.svelte'
     import Banner from '../lib/Banner/index.svelte'
     import About from '../lib/About/main.svelte'

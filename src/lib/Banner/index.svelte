@@ -31,7 +31,7 @@
             list: [
                 {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
                 link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS', 'GitHub Actions', 'NPX']},
-                {text: 'Embarca Challenge, uma ferramenta para manipulação de dados na AWS usando Python', 
+                {text: 'Embarca Challenge, um desafio sobre a criação de uma ferramenta para manipulação de dados', 
                 link: 'https://github.com/PedroThiagoMaisse/data-embarca-challange-public', tags: ['Python', 'AWS', 'GitHub Actions', 'Lambda', 'Serveless']},
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 

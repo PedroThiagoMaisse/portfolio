@@ -18,7 +18,6 @@
 </main>
 
 <style>
-
   main{
     position: relative;
     width: 100%;
