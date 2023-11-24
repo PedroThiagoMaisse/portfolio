@@ -50,7 +50,7 @@
             tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
             text: 'Ferramenta para mapear commits de projetos dentro do disco e commitar eles em outro projeto',
-            link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
+            link: 'https://github.com/PedroThiagoMaisse/commitMapping'
         },
     ]
 

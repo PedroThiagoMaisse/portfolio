@@ -100,8 +100,8 @@
     }
 
     .card{
-        height: 160px;
-        width: 160px;
+        height: 120px;
+        width: 120px;
         position: absolute;
         bottom: 56px;
         animation-timing-function: ease-in-out;
@@ -110,6 +110,7 @@
         animation-fill-mode: forwards;
         border-radius: 16px;
         margin-right: 16px;
+        font-size: 12px;
     }
 
     /* ANIMATION */
@@ -139,8 +140,8 @@
     }
 
     @keyframes animationOpen {
-    0%   {height: 160px; width: 160px; z-index: 2;}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; color: rgba(255,255,255,0.5)}
+    0%   {height: 120px; width: 120px; z-index: 2;}
+    50%  {right: calc(50% - 120px); bottom: calc(50% - 120px); height: 120px; width: 120px; color: rgba(255,255,255,0.5)}
     100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;  color: rgba(255,255,255,0)}
     }
 
@@ -150,14 +151,13 @@
 
     @keyframes animationClose {
     0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
-    50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;color: rgba(255,255,255,0.5)}
-    100%  {width: 160px; height: 160px; z-index: 1;}
+    50%  {right: calc(50% - 120px); bottom: calc(50% - 120px); height: 120px; width: 120px; z-index: 2;color: rgba(255,255,255,0.5)}
+    100%  {width: 120px; height: 120px; z-index: 1;}
     }
 
+
+
     @media only screen and (max-width: 790px) {
-        h1{
-            font-size: 22px;
-        }
 
         p{
             margin-right: 0px;
