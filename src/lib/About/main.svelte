@@ -109,4 +109,24 @@
         min-height: 560px;
     }
 
+    @media only screen and (max-width: 790px) {
+        .imageColumn{
+            display: none;
+        }
+        .textColumn{
+            padding: 12px;
+            width: 90% !important;
+        }
+
+        .textColumn h1{
+            font-size: 42px;
+        }
+
+        h1.quote{
+            font-size: 20px;
+        }
+        p.quote{
+            font-size: 12px;
+        }
+    }
 </style>

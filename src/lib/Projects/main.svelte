@@ -140,4 +140,43 @@
         filter: blur(0);
         transform: translateX(0);
     }
+
+    @media only screen and (max-width: 790px) {
+        h1{
+            font-size: 32px;
+        }
+
+        .projectList button{
+            margin-bottom: 20px;
+            padding: 2px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .mainText{
+            font-size: 12px;
+            padding: 6px;
+        }
+
+        .projectName{
+            margin: 6px 0px;
+            font-size: 18px;
+        }
+
+        .projectList{
+            width: calc(100vw - 16px);
+            flex-wrap: wrap;
+        }
+
+        .tags{
+            bottom: 36px;
+        }
+    }
+
+    @media only screen and (max-width: 590px) {
+        .projectList button{
+            width: 140px;
+        }
+    }
+
 </style>

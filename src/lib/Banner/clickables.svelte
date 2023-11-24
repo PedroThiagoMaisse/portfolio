@@ -21,7 +21,7 @@
         on:click={() => expand(i)}
         style="
         background-color: {element.color};
-        right: {i*200}px;"
+        right: {i*160}px;"
     >
         <spam class=contra> {element.title} </spam>
     </button>
@@ -152,5 +152,41 @@
     0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
     50%  {right: calc(50% - 160px); bottom: calc(50% - 160px); height: 160px; width: 160px; z-index: 2;color: rgba(255,255,255,0.5)}
     100%  {width: 160px; height: 160px; z-index: 1;}
+    }
+
+    @media only screen and (max-width: 790px) {
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            margin-right: 0px;
+            font-size: 16px;
+            padding-right: 64px;
+        }
+        
+        li{
+            margin-right: 0px;
+            padding-right: 64px;
+        }
+
+        .card{
+            width: 120px;
+            margin-left: 2px;
+            height: 120px;
+            font-size: 12px;
+        }
+
+        @keyframes animationOpen {
+        0%   {height: 120px; width: 120px; z-index: 2;}
+        50%  {right: calc(50% - 120px); bottom: calc(50% - 120px); height: 120px; width: 120px; color: rgba(255,255,255,0.5)}
+        100%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;  color: rgba(255,255,255,0)}
+        }
+
+        @keyframes animationClose {
+            0%  {right: -16px; bottom: 0%; width: 100%; height: 100%; border-radius: 0px; z-index: 2;color: rgba(255,255,255,0)}
+            50%  {right: calc(50% - 120px); bottom: calc(50% - 120px); height: 120px; width: 120px; z-index: 2;color: rgba(255,255,255,0.5)}
+            100%  {width: 120px; height: 120px; z-index: 1;}
+        }
     }
 </style>

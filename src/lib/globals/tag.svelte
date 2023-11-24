@@ -38,4 +38,13 @@
         border-radius: 4px;
     }
 
+    @media only screen and (max-width: 790px) {
+        .tag{
+            padding: 2px 2px 2px 3px;
+            font-size: 10px;
+            margin-left: 4px;
+            margin-bottom: 3px;
+        }
+
+    }
 </style>

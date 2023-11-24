@@ -14,7 +14,7 @@
                 <ul>
                 {#each element.Tasks as line}
                     {#if typeof line === 'object'}
-                        <li style="margin-left: 16px;color: rgb(68, 68, 165)"> 
+                        <li class="iList" style="margin-left: 16px;color: rgb(68, 68, 165)"> 
                             <a href="{line.link}" style="color: inherit">{line.text}</a> 
                         </li>
                     {:else}
@@ -112,6 +112,26 @@
         position: relative;
         width: 100%;
         margin-bottom: 64px;
+    }
+
+    @media only screen and (max-width: 790px) {
+        main{
+            padding: 0px;
+        }
+        h1{
+            font-size: 22px;
+        }
+        .workCard, p{
+            font-size: 12px;
+            max-width: 100%;
+            width: calc(100vw - 80px);
+        }
+        li{
+            width: calc(100vw - 88px);
+        }
+        .iList{
+            width: calc(100vw - 108px);
+        }
     }
 
 </style>
