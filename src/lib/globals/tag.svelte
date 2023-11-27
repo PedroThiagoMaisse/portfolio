@@ -11,6 +11,7 @@
 
     const tagColors = {
         Go: '#4a9099',
+        MongoDB: '#1B6725',
         Svelte: '#F73C00',
         SvelteKit: '#F73C00',
         TS: '#333395',

@@ -52,6 +52,13 @@
             text: 'Ferramenta para mapear commits de projetos dentro do disco e commitar eles em outro projeto',
             link: 'https://github.com/PedroThiagoMaisse/commitMapping'
         },
+        {
+            name: 'Olive', 
+            tags: ['Go', 'MongoDB'], 
+            img: '', 
+            text: 'Ferramenta para monitoramento de outros sitemas',
+            link: 'https://github.com/PedroThiagoMaisse/olive'
+        },
     ]
 
 	import { onMount } from 'svelte';

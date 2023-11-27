@@ -2,7 +2,7 @@
     <div class="bg">
         Bem vindo à um pedacinho do que eu faço,<br>
         Qualquer bug e dica pode ser direcionado para <a href="mailto:pedrothiagojosedasilva@gmail.com">pedrothiagojosedasilva@gmail.com</a> <br>
-         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>; passos até o próximo update: 2/5 </spam>
+         <spam style="font-size: 12px;"> Release: <spam style="font-weight: bold;">1.0</spam>;</spam>
     </div>
     <img src="{BannerBlob}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 200px); z-index: -20">
     <img src="{BannerBlobin}" alt="A blue wave in a grey background" style="position: absolute; left: calc(50% - 450px); z-index: -20">
@@ -23,15 +23,16 @@
             list: [
                 {text: 'Esse portfolio;', link: 'https://pedrothiagomaisse.github.io/newPortfolio/', tags: ['SvelteKit', 'TS', 'GitPages']},
                 {text: 'BRFCode, uma plataforma para auxiliar na validação em entregas;', link: 'https://BRFCode.com', tags: ['JS', 'Vue', 'Node', 'Azure']},
-                {text: 'MOrgan, um app de organização pessoal meu;', link: 'https://pedrothiagomaisse.github.io/MOrgan/', tags: ['Svelte','JS', 'GitPages']}
+                {text: 'MOrgan, um app de organização pessoal meu.', link: 'https://pedrothiagomaisse.github.io/MOrgan/', tags: ['Svelte','JS', 'GitPages']}
             ]
         },
         {
             color: '#697065',
             list: [
-                {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas', 
+                {text: 'Olive, uma ferramenta para monitoramento de sistemas;', link: 'https://pedrothiagomaisse.github.io/olive/', tags: ['Go', 'MongoDB']},
+                {text: 'Commit Mapping, uma ferramenta para criar uma visualização dentro do github de pushs feitos em outras ferramentas;', 
                 link: 'https://github.com/PedroThiagoMaisse/CommitMapping', tags: ['Node', 'JS', 'GitHub Actions', 'NPX']},
-                {text: 'Embarca Challenge, um desafio sobre a criação de uma ferramenta para manipulação de dados', 
+                {text: 'Embarca Challenge, um desafio sobre a criação de uma ferramenta para manipulação de dados.', 
                 link: 'https://github.com/PedroThiagoMaisse/data-embarca-challange-public', tags: ['Python', 'AWS', 'GitHub Actions', 'Lambda', 'Serveless']},
             ], 
             text: 'De vez em quando, surge aquela necessidade ou vontade de desenvolver uma ferramenta para dar uma mão no meu dia a dia ou simplificar algum processo, tipo:', 
