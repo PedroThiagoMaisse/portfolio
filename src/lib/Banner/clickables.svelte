@@ -158,16 +158,29 @@
 
 
     @media only screen and (max-width: 790px) {
+        h1{
+            font-size: 28px;
+            max-width: 90vw;
+        }
+
 
         p{
             margin-right: 0px;
             font-size: 16px;
             padding-right: 64px;
+            font-size: 14px;
         }
         
         li{
+            font-size: 10px;
+            margin-left: -6px;
             margin-right: 0px;
             padding-right: 64px;
+            margin-bottom: 8px;
+        }
+
+        a{
+            font-size: 12px !important;
         }
 
         .card{

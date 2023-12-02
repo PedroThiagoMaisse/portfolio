@@ -150,7 +150,7 @@
 
     @media only screen and (max-width: 790px) {
         h1{
-            font-size: 32px;
+            font-size: 28px;
         }
 
         .projectList button{
@@ -166,8 +166,8 @@
         }
 
         .projectName{
-            margin: 6px 0px;
-            font-size: 18px;
+            margin: 6px 4px;
+            font-size: 16px;
         }
 
         .projectList{
