@@ -40,12 +40,12 @@ para dar o deploy direto para gitpages use:
 - ~Rever o visual geral da page~  
 - ~Limpar outras coisas~  
 - ~Usabilidade no cel~  
+- ~Animate Blobs~
 
 </details>
 
 # Release 2
 - Ux/Ui
-	- Animate Blobs
 	- Novo design
 	- Aviso de Redirect
 	- Avisos de erro / notificações
