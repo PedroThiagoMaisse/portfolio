@@ -41,6 +41,8 @@ para dar o deploy direto para gitpages use:
 - ~Limpar outras coisas~  
 - ~Usabilidade no cel~  
 - ~Animate Blobs~
+- ~Diminuir o tamanho dos pacotes, depois de um estudo vi que o problema está em outros arquivos e coisas, vou focar neles~
+- ~minimaze the images size~
 
 </details>
 
@@ -53,7 +55,7 @@ para dar o deploy direto para gitpages use:
 	- Garantir Acessibilidade
 - Pactoes / Tooling
 	- Resolver o problema de import com o vite
-	- Diminuir o tamanho dos pacotes (three shaker)
+    - See if possible to reduce "main thread work'
 	- SvelteKit
 	- Automatizar o Deploy
 
