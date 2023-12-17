@@ -90,6 +90,8 @@
 
     const array = [
         {
+            element: null,
+            elementText: null,
             color: "#65706F",
             text: "Com uma bagagem em vários frameworks, minha atuação sempre foi bem diversificada, abrangendo várias linguagens e conjuntos de tecnologias, tipo:",
             title: "Desenvolvimento Web",
@@ -112,6 +114,8 @@
             ],
         },
         {
+            element: null,
+            elementText: null,
             color: "#697065",
             list: [
                 {
