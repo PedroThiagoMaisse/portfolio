@@ -32,6 +32,7 @@
 
     const projects = [
         {
+            element: new Element(),
             name: 'Esse portfólio', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -39,6 +40,7 @@
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
         },
         {
+            element: new Element(),
             name: 'Morgan', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -46,6 +48,7 @@
             link: 'https://github.com/PedroThiagoMaisse/MOrgan'
         },
         {
+            element: new Element(),
             name: 'CommitMapping', 
             tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
@@ -53,6 +56,7 @@
             link: 'https://github.com/PedroThiagoMaisse/commitMapping'
         },
         {
+            element: new Element(),
             name: 'Olive', 
             tags: ['Go', 'MongoDB'], 
             img: '', 

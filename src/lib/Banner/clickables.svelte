@@ -30,7 +30,7 @@
 <script lang="ts">
     interface element {
         element: any,
-        elementText: HTMLDivElement,
+        elementText: any,
         text: string,
         color: string,
         title: string,
