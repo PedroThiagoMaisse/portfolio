@@ -29,10 +29,18 @@
 
 <script lang="ts">
     import Tag from '../globals/tag.svelte';
+    interface element {
+        element: any,
+        name: string, 
+        tags: Array<string>, 
+        img: string, 
+        text: string,
+        link: string
+    }
 
-    const projects = [
+    const projects : Array<element> = [
         {
-            element: new Element(),
+            element: undefined,
             name: 'Esse portfólio', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -40,7 +48,7 @@
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
         },
         {
-            element: new Element(),
+            element: undefined,
             name: 'Morgan', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -48,7 +56,7 @@
             link: 'https://github.com/PedroThiagoMaisse/MOrgan'
         },
         {
-            element: new Element(),
+            element: undefined,
             name: 'CommitMapping', 
             tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
@@ -56,7 +64,7 @@
             link: 'https://github.com/PedroThiagoMaisse/commitMapping'
         },
         {
-            element: new Element(),
+            element: undefined,
             name: 'Olive', 
             tags: ['Go', 'MongoDB'], 
             img: '', 
@@ -85,7 +93,7 @@
         })
 
         projects.forEach(element => {
-            observer.observe(element.element)
+            return observer.observe(element.element);
         });
     })
 </script>
