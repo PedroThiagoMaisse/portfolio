@@ -55,8 +55,8 @@ para dar o deploy direto para gitpages use:
         - Alterar elas
         - Adicionar mais algum elemento de dinamismo no site
     - Modals
-        -~ Bases e leitura de objeto~
-        - Leitura de Array ao invés de objeto, permitindo mais do que um elemento
+        - ~Bases e leitura de objeto~
+        - ~Leitura de Array ao invés de objeto, permitindo mais do que um elemento~
         - Separação por tipo (aviso, form)
         - Estilização
         - Aviso de Redirect

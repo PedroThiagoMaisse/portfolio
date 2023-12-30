@@ -1,15 +1,19 @@
 <section style="z-index: 100;">
-    <h1>{pageDetails.title}</h1>
-    <h3>{pageDetails.subTitle}</h3>
-    <p>{pageDetails.text}</p>
+    {#each PageConstructList as element}
+    <dialog open style="background-color: rgba(0,0,0,0); border-width: 0px; padding: 0px; z-index: 300">
+        <h1>{element.title}</h1>
+        <h3>{element.subTitle}</h3>
+        <p>{element.text}</p>
 
-    <div style="display: flex;">
-        {#each pageDetails.actionButtons as button}
-            <button on:click={button.action}>
-                {button.text}
-            </button>
-        {/each}
-    </div>
+        <div style="display: flex;">
+            {#each element.actionButtons as button}
+                <button on:click={() => {button.action}}>
+                    {button.text}
+                </button>
+            {/each}
+        </div>
+    </dialog>
+    {/each}
     
 
 </section>
@@ -26,7 +30,7 @@ interface PageConstruct {
     }>
 
 }
-export let pageDetails: PageConstruct
+export let PageConstructList: Array<PageConstruct>
 
 
 </script>
