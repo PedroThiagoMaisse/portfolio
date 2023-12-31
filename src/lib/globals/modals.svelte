@@ -1,6 +1,6 @@
 <section style="z-index: 100;">
     {#each PageConstructList as element}
-    <dialog open style="background-color: rgba(0,0,0,0); border-width: 0px; padding: 0px; z-index: 300">
+    <dialog open style="background-color: rgba(0,0,0,0); border-width: 0px; padding: 0px; z-index: 300" class="{element.type}">
         <h1>{element.title}</h1>
         <h3>{element.subTitle}</h3>
         <p>{element.text}</p>
@@ -28,6 +28,7 @@ interface PageConstruct {
         text: string,
         action: Function
     }>
+    type: "warning" | "form" | "error"
 
 }
 export let PageConstructList: Array<PageConstruct>

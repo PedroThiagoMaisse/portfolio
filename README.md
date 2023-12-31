@@ -57,10 +57,11 @@ para dar o deploy direto para gitpages use:
     - Modals
         - ~Bases e leitura de objeto~
         - ~Leitura de Array ao invés de objeto, permitindo mais do que um elemento~
-        - Separação por tipo (aviso, form)
+        - ~Separação por tipo (aviso, form)~
         - Estilização
         - Aviso de Redirect
         - Avisos de erro / notificações
+        - Estilização dos difertentes métodos
 	- Tradução da Page
 	- Garantir Acessibilidade
 - Pactoes / Tooling

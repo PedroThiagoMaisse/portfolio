@@ -10,7 +10,7 @@
 </script>
 
 <main>
-    <Modals PageConstructList={[{title: "uepa", subTitle: "no", text: "aham", actionButtons: [{text: "testando", action: () => {console.log("1,2,3")}}]}]}></Modals>
+    <Modals PageConstructList={[{title: "uepa", subTitle: "no", text: "aham", actionButtons: [{text: "testando", action: () => {console.log("1,2,3")}}], "type": "form"}]}></Modals>
     <Appbar />
 <div style=" padding: 0px; height: 100vh;overflow-y: auto; overflow-x: hidden; width: 100vw; text-align: center">
     <Banner />
