@@ -5,11 +5,13 @@
     import About from '../lib/About/main.svelte'
     import Curriculum from '../lib/Curriculum/main.svelte'
     import Projects from '../lib/Projects/main.svelte'
+    import Modals from '../lib/globals/modals.svelte'
     
 </script>
 
 <main>
-<Appbar />
+    <!-- <Modals PageConstructList={[{title: "uepa", subTitle: "no", text: "aham", actionButtons: [{text: "testando", action: () => {console.log("1,2,3")}}], "type": "form"}]}></Modals> -->
+    <Appbar />
 <div style=" padding: 0px; height: 100vh;overflow-y: auto; overflow-x: hidden; width: 100vw; text-align: center">
     <Banner />
     <About />

@@ -18,6 +18,7 @@ para dar o deploy direto para gitpages use:
 
 ### Release 1: O básico
 <details>
+
 - ~Banner img~  
 - ~Garantir nota alta no lighthouse (talvez isso quebre em mais tasks)~  
     nota atual: 100, 100, 100, 100  
@@ -38,20 +39,32 @@ para dar o deploy direto para gitpages use:
 - ~Separar o Banner em +1 componente~  
 - ~Rever o visual geral da page~  
 - ~Limpar outras coisas~  
+- ~Usabilidade no cel~  
+- ~Animate Blobs~
+- ~Diminuir o tamanho dos pacotes, depois de um estudo vi que o problema está em outros arquivos e coisas, vou focar neles~
+- ~minimaze the images size~
+- ~See if possible to reduce "main thread work", só acontece no primeiro run~
+- ~Resolver o problema de import com o vite~
+
 </details>
 
 # Release 2
 - Ux/Ui
-	- Animate Blobs
 	- Novo design
-	- Aviso de Redirect
-	- Avisos de erro / notificações
+        - Separar as cores em um arquivo
+        - Alterar elas
+        - Adicionar mais algum elemento de dinamismo no site
+    - Modals
+        - ~Bases e leitura de objeto~
+        - ~Leitura de Array ao invés de objeto, permitindo mais do que um elemento~
+        - ~Separação por tipo (aviso, form)~
+        - Estilização
+        - Aviso de Redirect
+        - Avisos de erro / notificações
+        - Estilização dos difertentes métodos
 	- Tradução da Page
 	- Garantir Acessibilidade
-	- Usabilidade no cel
 - Pactoes / Tooling
-	- Resolver o problema de import com o vite
-	- Diminuir o tamanho dos pacotes (three shaker)
 	- SvelteKit
 	- Automatizar o Deploy
 

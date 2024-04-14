@@ -29,9 +29,18 @@
 
 <script lang="ts">
     import Tag from '../globals/tag.svelte';
+    interface element {
+        element: any,
+        name: string, 
+        tags: Array<string>, 
+        img: string, 
+        text: string,
+        link: string
+    }
 
-    const projects = [
+    const projects : Array<element> = [
         {
+            element: undefined,
             name: 'Esse portfólio', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -39,6 +48,7 @@
             link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
         },
         {
+            element: undefined,
             name: 'Morgan', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
@@ -46,11 +56,20 @@
             link: 'https://github.com/PedroThiagoMaisse/MOrgan'
         },
         {
+            element: undefined,
             name: 'CommitMapping', 
             tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
             text: 'Ferramenta para mapear commits de projetos dentro do disco e commitar eles em outro projeto',
             link: 'https://github.com/PedroThiagoMaisse/commitMapping'
+        },
+        {
+            element: undefined,
+            name: 'Olive', 
+            tags: ['Go', 'MongoDB'], 
+            img: '', 
+            text: 'Ferramenta para monitoramento de outros sitemas',
+            link: 'https://github.com/PedroThiagoMaisse/olive'
         },
     ]
 
@@ -74,7 +93,7 @@
         })
 
         projects.forEach(element => {
-            observer.observe(element.element)
+            return observer.observe(element.element);
         });
     })
 </script>
@@ -143,7 +162,7 @@
 
     @media only screen and (max-width: 790px) {
         h1{
-            font-size: 32px;
+            font-size: 28px;
         }
 
         .projectList button{
@@ -159,8 +178,8 @@
         }
 
         .projectName{
-            margin: 6px 0px;
-            font-size: 18px;
+            margin: 6px 4px;
+            font-size: 16px;
         }
 
         .projectList{

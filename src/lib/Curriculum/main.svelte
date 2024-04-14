@@ -35,10 +35,20 @@
     
     const jobs = [
         {
-            Company: "BRF Food - Aceleração Digital",
+            Company: "Embarca",
             Title: "Desenvolvedor",
             Start: "2023",
             End: "Atual",
+            Tasks: [
+                "Atuei dentro da squad de dados apoiando o desenvolvimento de ferramentas de Pricing",
+                "Desenvolvi métodos de teste e logs para ferramentas internas"
+            ]
+        },
+        {
+            Company: "BRF Food - Aceleração Digital",
+            Title: "Desenvolvedor",
+            Start: "2023",
+            End: "2023",
             Tasks: [
                 "Atuei dentro do Centro de Excelência responsável pelos chatbots da empresa, somando 4,4M de Mensagens mensais, destaques:",
                 {link: "https://blog.flashapp.com.br/think-work-flash-innovations-vencedores", text: "Theo recebe prêmio de inovação em atração e seleção;"},
@@ -87,6 +97,7 @@
     }
 
     .workCard{
+        padding: 2px;
         margin: auto;
         min-width: 600px;
         max-width: 40%;
@@ -108,7 +119,7 @@
     }
 
     main{
-        margin-top: 16px;
+        margin-top: 12px;
         position: relative;
         width: 100%;
         margin-bottom: 64px;
