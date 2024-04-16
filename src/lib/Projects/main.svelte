@@ -1,30 +1,37 @@
 <main>
-    <h1> (Quase) Todos os meus projetos </h1>
+    <h1> Projetos </h1>
 
+    <div class="scrollarea" bind:this={projectList}>
     <div class="projectList show">
         {#each projects as item, index (index)}
-            <button 
-            class="hidden" 
+            <button
             style="
-                transition-delay: {index * 200}ms;
                 background-image: linear-gradient( rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url('{item.img}')
-            " 
+            "
+            class="skipPattern"
             bind:this={item.element} 
             aria-label="get more details from: {item.name}"
             on:click={() => window.open(item.link, "_blank")}
             >
+                <p class="lastEdit">
+                    {item.lastEdit}
+                </p>
+                <p class="projectName">
+                    {item.name}
+                </p>
                 <p class="mainText">
                     {item.text}
                 </p>
                 <div class="tags">
                     <Tag tagArray="{item.tags}"></Tag>
                 </div>
-                <p class="projectName">
-                    {item.name}
-                </p>
+               
             </button>
         {/each}
     </div>
+    </div>
+    <button style="left: calc(-172px - 100px);" class="sideScroll" on:click={() => {scrollList(-300, -300)}}> {"<"} </button>
+    <button style="right: calc(-172px - 100px);" class="sideScroll" on:click={() => {scrollList(300, 300)}}> {">"} </button>
 </main>
 
 <script lang="ts">
@@ -35,7 +42,13 @@
         tags: Array<string>, 
         img: string, 
         text: string,
-        link: string
+        link: string,
+        lastEdit: string
+    }
+    let projectList: any = undefined
+
+    function scrollList(x,y){
+        projectList.scrollBy(x,y)
     }
 
     const projects : Array<element> = [
@@ -44,24 +57,27 @@
             name: 'Esse portfólio', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
-            text: 'Página construída com foco na usabilidade e rapidez',
-            link: 'https://github.com/PedroThiagoMaisse/newPortfolio'
+            text: 'Página construída com foco em presentabilidade e rapidez',
+            link: 'https://github.com/PedroThiagoMaisse/newPortfolio',
+            lastEdit: 'Abril, 2024'
         },
         {
             element: undefined,
             name: 'Morgan', 
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
-            text: 'Um jeito de unificar minhas informações em apenas um lugar',
-            link: 'https://github.com/PedroThiagoMaisse/MOrgan'
+            text: 'Um editor e publicador de textos',
+            link: 'https://github.com/PedroThiagoMaisse/MOrgan',
+            lastEdit: 'Dezembro, 2023'
         },
         {
             element: undefined,
             name: 'CommitMapping', 
             tags: ['Node', 'JS', 'NPM/NPX', 'GitHub Actions'], 
             img: '', 
-            text: 'Ferramenta para mapear commits de projetos dentro do disco e commitar eles em outro projeto',
-            link: 'https://github.com/PedroThiagoMaisse/commitMapping'
+            text: 'Ferramenta para mapeamento de commits locais',
+            link: 'https://github.com/PedroThiagoMaisse/commitMapping',
+            lastEdit: 'Janeiro, 2024'
         },
         {
             element: undefined,
@@ -69,95 +85,107 @@
             tags: ['Go', 'MongoDB'], 
             img: '', 
             text: 'Ferramenta para monitoramento de outros sitemas',
-            link: 'https://github.com/PedroThiagoMaisse/olive'
+            link: 'https://github.com/PedroThiagoMaisse/olive',
+            lastEdit: 'Dezembro, 2023'
         },
     ]
-
-	import { onMount } from 'svelte';
-
-    onMount(() =>{
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show')
-                    entry.target.classList.remove('hidden')
-                } else{
-                    entry.target.classList.remove('show')
-                    entry.target.classList.add('hidden')
-
-
-                }
-
-            })
-
-        })
-
-        projects.forEach(element => {
-            return observer.observe(element.element);
-        });
-    })
 </script>
 
 
 <style>
+    p{
+        margin: 8px;
+    }
+    h1{
+        color: #ffc850 !important;  
+    }
     .mainText{
         font-size: 16px;
-        position: relative;
-        bottom: 42px;
         text-align: center;
+        padding: 0px 8px
         /* align-items:baseline; */
     }
     .projectName{
-        position: absolute;
-        bottom: 8px;
+        line-height: 120%;
         font-size: 24px;
         font-weight: 600;
         color: #FFF;
     }
+    .lastEdit{
+        transition: 1s;
+        line-height: 100%;
+        opacity: 0;
+    }
     .tags{
+        margin-top: 16px;
+        transition: 1s;
+        opacity: 0;
         display: flex;
-        position: absolute;
-        bottom: 64px;
-        max-width: 80%;
         flex-wrap: wrap;
     }
 
+    .sideScroll{
+        outline: rgba(0, 0, 0, 0.6) solid 2px;
+        position: absolute;
+        top: 292px;
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        font-size: 24px;
+        background-color: #dcdee5;
+        color: #333;
+    }
+
     .projectList button{
+        margin-left: 16px;
         opacity: 1;
-        transition: 1s;
-        transition-timing-function: ease-in-out;
         position: relative;
-        height: 240px;
-        width: 240px;
+        height: 460px;
+        width: 300px;
         border-radius: 16px;
         background-size: cover;
     }
 
+    button:hover,
+    button:focus,
+    button:focus-visible{
+        outline: rgba(250, 250, 250, 0.6) solid 2px;
+        backdrop-filter: blur(20px);
+    }
 
+    button:hover .tags,
+    button:focus .tags,
+    button:focus-visible .tags,
+    button:hover .lastEdit,
+    button:focus .lastEdit,
+    button:focus-visible .lastEdit{
+        opacity: 1;
+    }
+
+    .scrollarea{
+        scroll-behavior: smooth !important;
+        display: flex;
+        width: 100vw;
+        overflow-x: scroll;
+        position: relative;
+        left: calc(-172px - 120px);
+
+    }
 
     .projectList{
-        margin-top: 52px;
-        justify-content: space-evenly;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        /* padding-left: 150px;
+        padding-right: 150px; */
+        width: fit-content;
         display: flex;
-        margin-bottom: 52px;
     }
 
     main{
-        margin-top: -52px;
-        width: 100%;
-        height: 560px;
-    }
-
-    .hidden{
-        opacity: 0 !important;
-        filter: blur(5px);
-        transform: translateX(-100%);
-    }
-
-    .show{
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
+        margin-left: 172px;
+        margin-right: 172px;
+        text-align: left;
+        position: relative;
     }
 
     @media only screen and (max-width: 790px) {

@@ -4,12 +4,9 @@
         Qualquer bug e dica pode ser direcionado para
         <a href="mailto:pedrothiagojosedasilva@gmail.com"
             >pedrothiagojosedasilva@gmail.com</a
-        > <br />
-        <spam style="font-size: 12px;">
-            Release: <spam style="font-weight: bold;">1.0</spam></spam
         >
     </div>
-    <div style="position: absolute; width: 100vw">
+    <div style="position: absolute; width: 100vw;">
         <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
         <section style="display: flex;">
             <svg
@@ -81,13 +78,9 @@
             </script>
         </section>
     </div>
-
-    <Clickables callout={array}></Clickables>
 </main>
 
 <script lang="ts">
-    import Clickables from "./clickables.svelte";
-
     const array = [
         {
             element: null,
@@ -153,19 +146,16 @@
     .bg {
         text-align: center;
         padding-top: 190px;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0) 60%,
-            rgba(0, 0, 0, 0.4) 100%
-        );
         z-index: -2;
         position: absolute;
         width: 100%;
-        height: calc(560px - 190px);
+        height: calc(720px - 190px);
+        background-color: #242424;
     }
 
     main {
         position: relative;
         width: 100%;
-        height: 560px;
+        height: 720px;
     }
 </style>

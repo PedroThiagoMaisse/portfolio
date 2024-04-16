@@ -1,88 +1,92 @@
 <main>
-    <img src="{LayersTop}" alt="stacked multi-color waves to segregate the section" style="margin-bottom: -2px;"/>
     <div>
         <h1>
-            Experiências de Trabalho Formais
+            Experiências de Trabalho
         </h1>
 
         {#each jobs as element, i (element)}
             <div class="workCard">
-                <p>
-                    <spam class="jobTitle"> {element.Title} </spam><br>
-                    {element.Company},  {element.Start} - {element.End}
-                </p>
-                <ul>
-                {#each element.Tasks as line}
-                    {#if typeof line === 'object'}
-                        <li class="iList" style="margin-left: 16px;color: rgb(68, 68, 165)"> 
-                            <a href="{line.link}" style="color: inherit">{line.text}</a> 
-                        </li>
-                    {:else}
-                        <li> {line} </li>
-                    {/if}
-                {/each}
-                </ul>
+                <div style="width: 50%;">
+                    <p>
+                        <spam class="jobTitle"> {element.Title} </spam><br>
+                        {element.Start} - {element.End}
+                    </p>
+                </div>
+                <div style="">
+                    <p>
+                        {element.text}
+                    </p>
+                    {#each element.Stack as line}
+                    <p style="font-size: 14px; line-height: 100%">    
+                        - {line}
+                    </p>
+                    {/each}
+                </div>
+                
             </div>
         {/each}
     </div>
 
-    <img src="{LayersBot}" alt="stacked multi-color waves to segregate the section" style="margin-top: -2px;"/>
 </main>
 
 <script lang="ts">
-    import LayersTop from '../../assets/layersTop.svg'
-    import LayersBot from '../../assets/layersBot.svg'
-    
     const jobs = [
         {
             Company: "Embarca",
-            Title: "Desenvolvedor",
-            Start: "2023",
+            Title: "Embarca - Dynamic Pricing",
+            Start: "Dez 2023",
             End: "Atual",
-            Tasks: [
-                "Atuei dentro da squad de dados apoiando o desenvolvimento de ferramentas de Pricing",
-                "Desenvolvi métodos de teste e logs para ferramentas internas"
-            ]
+            Stack: [
+                "Python",
+                "AWS",
+                "State Machines",
+                "Airflow",
+                "Elastic"
+            ],
+            text: "Ferramenta para obtenção de preços de mercado e atualização dos nossos preços seguindo uma série de regras de négocio. Trabalhei principalmente com a manutenção e incorporação de novas features do nosso 'backend'. Principais tecnologias da stack:"
         },
         {
-            Company: "BRF Food - Aceleração Digital",
-            Title: "Desenvolvedor",
-            Start: "2023",
-            End: "2023",
-            Tasks: [
-                "Atuei dentro do Centro de Excelência responsável pelos chatbots da empresa, somando 4,4M de Mensagens mensais, destaques:",
-                {link: "https://blog.flashapp.com.br/think-work-flash-innovations-vencedores", text: "Theo recebe prêmio de inovação em atração e seleção;"},
-                {link: "https://tiinside.com.br/31/03/2022/brf-avanca-na-jornada-digital-e-leva-assistente-virtual-para-oriente-medio/", text: "Flor é internacionalizada para atender países do Oriente Médio;"},
-                {link: "https://www.linkedin.com/posts/brf_brf-nossapartepelotodo-inova%C3%A7%C3%A3o-activity-7013978684780916736-AlwE/?originalSubdomain=pt", text: "Flor é reconhecida pela Organização para a Cooperação e Desenvolvimento Econômico (OCDE);"},
-                {link: "https://revista.consumidormoderno.com.br/premio-cm-2022-empresas-vencedoras/edicao-271/", text: "BRF ganha o prémio consumidor moderno 2022, com menção em seu discurso para os chatbots;"},
-                {link: "https://inforchannel.com.br/2021/04/06/assistente-virtual-da-brf-fortalece-interacoes-com-clientes-da-sadia/", text: "Assistente virtual da BRF fortalece interações com os clientes da Sadia."},
-                "Atuei como Tech Lead e desenvolvedor dentro de uma plataforma com 200k+ de usuários anuais",
-                "Padronizei o desenvolvimento de ferramentas Microsoft",
-                "Desenvolvi ferramentas para melhora de produtividade e diminuição de fluxos"
-            ]
-        },
-        {
-            Company: "BRF Food - Digital Lab",
-            Title: "Desenvolvedor Junior",
-            Start: "2021",
-            End: "2022",
-            Tasks: [
-                "Desenvolvimento de uma solução financeira",
-                "Mentorei 20+ estagiários e desenvolver material de apoio",
-                "Auxiliei a squad responsável pelos chatbots da empresa",
-                "Criação de ferramentas como Microserviços"
-            ]
+            Company: "BRF - Aceleração Digital",
+            Title: "BRF - CoE Chatbots",
+            Start: "Maio 2022",
+            End: "Dez 2023",
+            Stack: [
+                "Node",
+                "TypeScript",
+                "IBM Watson Assistent",
+                "Docker",
+                "Azure",
+                "Mongo Db"
+            ],
+            text: "Centro de excelencia com o objetivo de centralizar a criação e manutenção dos bots corporativos da empresa, que somam mais de 4,4M de Mensagens mensais. Atuei com a organização do time, conexão com outras áreas e resolvimentos de bugs, assim na criação de bots emergenciais. Principais tecnologias da stack:"
         },
         {
             Company: "BRF Food - Digital Lab",
-            Title: "Estagiário",
-            Start: "2021",
-            End: "2022",
-            Tasks: [
+            Title: "BRF - Hub de Estagiários",
+            Start: "Maio 2022",
+            End: "Janeiro 2023",
+            Stack: [
+                "FrontEnd (Vue, React e Next)",
+                "Backend (Node)",
+                "Agildidade",
+                "UX/UI",
+                "Dados (Cientistas e Engenheiros)",
+                "RPA"
+
+            ],
+            text: "Hub de formação de estagiário que possibilitava o avanço de soft e hardskills focados em diversas formações do mundo tech. Atuei com a coordenação e acompanhamento dos 30+ estagiários do programa, assim como mentor de front, back e agilidade. Os grupos de estagiários eram:"
+        },
+        {
+            Company: "BRF Food - Digital Lab",
+            Title: "BRF - BRFCode",
+            Start: "Abril 2021",
+            End: "Fevereiro 2022",
+            Stack: [
                 "Desenvolvi aplicações web, desktop e mobile",
                 "Desenvolvi e Mantive uma plataforma que alcançou 100k de usuários em seu primeiro ano",
                 "Refatorei códigos e ferramentas com ênfase em melhor manutenção e experiência"
-            ]
+            ],
+            text: "Plataforma para acompanhamento e contagem de entregas (focadas em kits natalinos) totalmente interna da impresa. Minha atividade no projeto começou como desenvolvedor frontend e acabei me movendo para '"
         }
 
     ]
@@ -91,16 +95,25 @@
 
 
 <style>
+    h1{
+        color: #c6975e
+    }
+
+    p{
+        margin-top: 0px;
+        font-size: 18px;
+        font-weight: 200;
+    }
     .jobTitle{
+        color: #c6975e;
         font-size: 24px;
         font-weight: 600;
     }
 
     .workCard{
+        display: flex;
         padding: 2px;
         margin: auto;
-        min-width: 600px;
-        max-width: 40%;
         text-align: left;
     }
 
@@ -113,15 +126,12 @@
         width: 100%;
     }
 
-    main img{
-        aspect-ratio: 1280/200;
-        width: 100%;
-    }
-
     main{
+        margin-left: 172px;
+        margin-right: 172px;
+        text-align: left;
         margin-top: 12px;
         position: relative;
-        width: 100%;
         margin-bottom: 64px;
     }
 
