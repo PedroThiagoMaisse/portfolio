@@ -6,18 +6,18 @@
 
         {#each jobs as element, i (element)}
             <div class="workCard">
-                <div style="width: 50%;">
+                <div>
                     <p>
                         <spam class="jobTitle"> {element.Title} </spam><br>
                         {element.Start} - {element.End}
                     </p>
                 </div>
-                <div style="">
+                <div>
                     <p>
                         {element.text}
                     </p>
                     {#each element.Stack as line}
-                    <p style="font-size: 14px; line-height: 100%">    
+                    <p class="lines">    
                         - {line}
                     </p>
                     {/each}
@@ -96,6 +96,10 @@
 
 
 <style>
+    .lines{
+        font-size: 14px; 
+        line-height: 100%
+    }
     h1{
         color: #c6975e
     }
@@ -120,6 +124,10 @@
         margin-top: 48px;
     }
 
+    .workCard div{
+        width: 50%;
+    }
+
     main div{
         color: black;
         justify-content: center;
@@ -139,14 +147,31 @@
     @media only screen and (max-width: 790px) {
         main{
             padding: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
         }
         h1{
-            font-size: 22px;
+            font-size: 20px;
         }
+        .jobTitle{
+            font-size: 18px;
+        }
+        .workCard div{
+            width: 100%;
+        }
+
+
+        .workCard{
+            display: flex;
+            flex-direction: column;
+        }
+
         .workCard, p{
             font-size: 12px;
             max-width: 100%;
-            width: calc(100vw - 80px);
+        }
+        .lines{
+            font-size: 10px;
         }
     }
 

@@ -92,7 +92,6 @@ const outlineProgression = [
     }
 
     .textColumn{
-        padding-top: 24px;
         width: 50%;
         height: 100%;
     }
@@ -111,12 +110,20 @@ const outlineProgression = [
             display: none;
         }
         .textColumn{
-            padding: 12px;
             width: 90% !important;
         }
 
         .textColumn h1{
-            font-size: 42px;
+            font-size: 32px;
+        }
+    
+        main{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .textColumn p{
+            font-size: 14px;
         }
     }
 </style>

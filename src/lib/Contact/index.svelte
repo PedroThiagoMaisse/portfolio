@@ -2,15 +2,15 @@
     <h1> Contato </h1>
     <div class="columns">
         <div>
-            <p style="font-size: 32px; margin: 0px 0px 56px 0px; font-weight: 600">
+            <p class="caller">
                 Interessado(a) em algo que viu? <br> 
                 Me chame em alguma rede social!
             </p>
-            <button style="height: 52px; font-size: 20px; margin-bottom: 12px">
+            <button class="callerButton">
                 Entre em contato
             </button>
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div class="links">
             {#each contacts as contact}
             <a href="{contact.link}" target="_blank">
                 <button style="width: 92px; margin-bottom: 12px">
@@ -53,12 +53,23 @@
 
 
 <style>
+    .caller{
+        font-size: 32px; 
+        margin: 0px 0px 56px 0px; 
+        font-weight: 600
+    }
+
     h1{
         color: #5DABC7
     }
     .columns{
         display: flex;
         justify-content: space-between;
+    }
+
+    .links{
+        display: flex; 
+        flex-direction: column
     }
 
     button{
@@ -77,5 +88,36 @@
         position: relative;
         color: #333;
     }
+
+    .callerButton{
+        height: 52px; 
+        font-size: 20px; 
+        margin-bottom: 12px
+    }
+
+    @media only screen and (max-width: 790px) {
+        main{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .caller{
+            font-size: 24px;
+        }
+        .callerButton{
+            display: none;
+            font-size: 16px;
+        }
+        .columns{
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+        }
+        .links{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
 
 </style>
