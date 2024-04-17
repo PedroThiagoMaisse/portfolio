@@ -54,5 +54,17 @@ function scrollIntoView(id) {
         height: 40px;
     }
 
+    @media only screen and (max-width: 790px) {
+        button{
+            font-size: 12px;
+            margin-left: 6px;
+        }
+
+        main{
+            padding: 8px 24px;
+            width: calc(100% - 48px);
+        }
+    }
+
 
 </style>

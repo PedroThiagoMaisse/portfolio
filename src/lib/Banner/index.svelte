@@ -101,4 +101,13 @@
         height: 620px;
         background-color: #242424;
     }
+
+    @media only screen and (max-width: 790px) {
+        .bg{
+            font-size: 18px;
+        }
+        main{
+            height: 520px;
+        }
+    }
 </style>

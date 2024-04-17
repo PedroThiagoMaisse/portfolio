@@ -30,8 +30,8 @@
         {/each}
     </div>
     </div>
-    <button style="left: calc(-172px - 100px);" class="sideScroll" on:click={() => {scrollList(-300, -300)}}> {"<"} </button>
-    <button style="right: calc(-172px - 100px);" class="sideScroll" on:click={() => {scrollList(300, 300)}}> {">"} </button>
+    <button class="sideScroll left" on:click={() => {scrollList(-300, -300)}}> {"<"} </button>
+    <button class="sideScroll right" on:click={() => {scrollList(300, 300)}}> {">"} </button>
 </main>
 
 <script lang="ts">
@@ -93,7 +93,7 @@
             element: undefined,
             name: 'BRFCode',
             img: brfcodeImg,
-            text: "BRFCode, uma plataforma para auxiliar na validação em entregas;",
+            text: "BRFCode, uma plataforma para auxiliar na validação em entregas",
             link: "https://BRFCode.com",
             tags: ["JS", "Vue", "Node", "Azure"],
             lastEdit: 'Dezembro 2023'
@@ -144,6 +144,14 @@
         font-size: 24px;
         background-color: #dcdee5;
         color: #333;
+    }
+
+    .sideScroll.left{
+        left: calc(-172px - 100px);
+    }
+
+    .sideScroll.right{
+        right: calc(-172px - 100px);
     }
 
     .projectList button{
@@ -199,15 +207,48 @@
     }
 
     @media only screen and (max-width: 790px) {
+        main {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
         h1{
             font-size: 28px;
         }
 
+        .projectList{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .scrollarea{
+            padding-right: 0px;
+            margin-right: 0px;
+            min-width: calc(100vw + 20px) !important;
+            left: 0px;
+        }
+
+        .sideScroll.left{
+            left: calc(-10px);
+        }
+
+        .sideScroll.right{
+            right: calc(-10px);
+        }
+
+        .sideScroll{
+            top: 170px;
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+        }
+
         .projectList button{
+            height: 230px;
+            min-width: 150px;
             margin-bottom: 20px;
             padding: 2px;
-            width: 180px;
-            height: 180px;
         }
 
         .mainText{
@@ -222,18 +263,17 @@
 
         .projectList{
             width: calc(100vw - 16px);
-            flex-wrap: wrap;
         }
 
         .tags{
-            bottom: 36px;
+            opacity: 1;
         }
     }
 
-    @media only screen and (max-width: 590px) {
+    /* @media only screen and (max-width: 590px) {
         .projectList button{
             width: 140px;
         }
-    }
+    } */
 
 </style>
