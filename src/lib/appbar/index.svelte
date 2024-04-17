@@ -1,18 +1,24 @@
 <script lang="ts">
 const sections = [
-    {"name": "Sobre", "type": "scrollDown", "heigth": "200px", "link": ""},
-    {"name": "Projetos", "type": "scrollDown", "heigth": "200px", "link": ""},
-    {"name": "Empregos", "type": "scrollDown", "heigth": "200px", "link": ""},
-    {"name": "Contato", "type": "scrollDown", "heigth": "200px", "link": ""},
+    {"name": "Sobre", "type": "scrollDown", "heigth": "200px", "id": "#about"},
+    {"name": "Projetos", "type": "scrollDown", "heigth": "200px", "id": "#projects"},
+    {"name": "Empregos", "type": "scrollDown", "heigth": "200px", "id": "#curriculum"},
+    {"name": "Contato", "type": "scrollDown", "heigth": "200px", "id": "#contact"},
 ]
 
-
+function scrollIntoView(id) {
+		const el = document.querySelector(id)
+		if (!el) return
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
 
 <main>
     <div class="line">
         {#each sections as element}
-            <button type="button" value="Oioi">
+            <button type="button" on:click|preventDefault={() => {scrollIntoView(element.id)}}>
                 {element.name.toUpperCase()}
             </button>
         {/each}

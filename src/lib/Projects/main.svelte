@@ -6,10 +6,10 @@
         {#each projects as item, index (index)}
             <button
             style="
-                background-image: linear-gradient( rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url('{item.img}')
+                background-size: cover;
+                background-image: linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url('{item.img}')
             "
             class="skipPattern"
-            bind:this={item.element} 
             aria-label="get more details from: {item.name}"
             on:click={() => window.open(item.link, "_blank")}
             >
@@ -35,6 +35,7 @@
 </main>
 
 <script lang="ts">
+    import brfcodeImg from '../../assets/brfcode.png'
     import Tag from '../globals/tag.svelte';
     interface element {
         element: any,
@@ -88,6 +89,15 @@
             link: 'https://github.com/PedroThiagoMaisse/olive',
             lastEdit: 'Dezembro, 2023'
         },
+        {
+            element: undefined,
+            name: 'BRFCode',
+            img: brfcodeImg,
+            text: "BRFCode, uma plataforma para auxiliar na validação em entregas;",
+            link: "https://BRFCode.com",
+            tags: ["JS", "Vue", "Node", "Azure"],
+            lastEdit: 'Dezembro 2023'
+        },
     ]
 </script>
 
@@ -97,7 +107,7 @@
         margin: 8px;
     }
     h1{
-        color: #ffc850 !important;  
+        color: #BA5DC7 !important;  
     }
     .mainText{
         font-size: 16px;
@@ -175,8 +185,8 @@
     .projectList{
         margin-top: 16px;
         margin-bottom: 16px;
-        /* padding-left: 150px;
-        padding-right: 150px; */
+        padding-left: 80px;
+        padding-right: 80px;
         width: fit-content;
         display: flex;
     }

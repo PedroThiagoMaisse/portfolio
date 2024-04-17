@@ -53,7 +53,7 @@
             Stack: [
                 "Node",
                 "TypeScript",
-                "IBM Watson Assistent",
+                "IBM Watson Assistant",
                 "Docker",
                 "Azure",
                 "Mongo Db"
@@ -82,11 +82,12 @@
             Start: "Abril 2021",
             End: "Fevereiro 2022",
             Stack: [
-                "Desenvolvi aplicações web, desktop e mobile",
-                "Desenvolvi e Mantive uma plataforma que alcançou 100k de usuários em seu primeiro ano",
-                "Refatorei códigos e ferramentas com ênfase em melhor manutenção e experiência"
+                "Vue",
+                "React Native",
+                "Node",
+                "Azure"
             ],
-            text: "Plataforma para acompanhamento e contagem de entregas (focadas em kits natalinos) totalmente interna da impresa. Minha atividade no projeto começou como desenvolvedor frontend e acabei me movendo para '"
+            text: "Plataforma para acompanhamento e contagem de entregas totalmente interna da impresa. Minha atividade no projeto começou como desenvolvedor frontend e na finalização estava prestando como apoio ao backend e mobile. Principais tecnologias da stack:"
         }
 
     ]
@@ -106,7 +107,7 @@
     }
     .jobTitle{
         color: #c6975e;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 600;
     }
 
@@ -115,14 +116,14 @@
         padding: 2px;
         margin: auto;
         text-align: left;
+        margin-bottom: 48px;
+        margin-top: 48px;
     }
 
     main div{
         color: black;
         justify-content: center;
-        padding: 16px;
         margin-top: -8px;
-        background-color: #DDD;
         width: 100%;
     }
 

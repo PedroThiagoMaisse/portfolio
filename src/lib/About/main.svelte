@@ -31,6 +31,9 @@ const outlineProgression = [
 
 
 <style>
+    h1{
+        color: #93C75D
+    }
 
     .textColumn h1{
         position: relative;
