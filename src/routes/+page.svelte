@@ -37,7 +37,7 @@
 <style>
 
 section{
-    margin: 40px 0px 40px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 main{

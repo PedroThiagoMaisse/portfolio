@@ -148,12 +148,6 @@
             max-width: 100%;
             width: calc(100vw - 80px);
         }
-        li{
-            width: calc(100vw - 88px);
-        }
-        .iList{
-            width: calc(100vw - 108px);
-        }
     }
 
 </style>
