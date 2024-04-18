@@ -1,7 +1,7 @@
 <main>
     <div class="textColumn">
         <h1> Sobre </h1>
-        <p> Desenvolvedor com um tiquinho de conhecimento sobre gestão de projeto, artes gráficas, literatura, música e matemática. 
+        <p> Desenvolvedor com um tiquinho de conhecimento sobre gestão de projeto, filosofia, literatura, música e matemática. 
             A maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiando.</p>
         <h1> Engenharia </h1>
         <p>  Por influência dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a decisão de sempre me atualizar sobre Design Patternns, Stacks, linguagens e sistemas totalmente novos.</p>
