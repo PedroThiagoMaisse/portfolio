@@ -270,10 +270,4 @@
         }
     }
 
-    /* @media only screen and (max-width: 590px) {
-        .projectList button{
-            width: 140px;
-        }
-    } */
-
 </style>
