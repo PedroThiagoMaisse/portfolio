@@ -56,7 +56,7 @@
         {
             element: undefined,
             name: 'Esse portfólio', 
-            tags: ['Svelte', 'JS', 'GitPages'], 
+            tags: ['Svelte', 'TS', 'GitHub Actions', 'GitPages'], 
             img: '', 
             text: 'Página construída com foco em presentabilidade e rapidez',
             link: 'https://github.com/PedroThiagoMaisse/portfolio',

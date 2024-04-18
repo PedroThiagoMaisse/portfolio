@@ -1,7 +1,7 @@
 
 {#if tagArray}
     {#each tagArray as tag, i (tag)}
-        <spam style="background-color: {tagColors[tag]}" class=tag> {tag} </spam>
+        <spam style="background-color: {tagColors[tag]}" class=tag>{tag}</spam>
     {/each}  
 {/if}
 
