@@ -59,7 +59,7 @@
             tags: ['Svelte', 'JS', 'GitPages'], 
             img: '', 
             text: 'Página construída com foco em presentabilidade e rapidez',
-            link: 'https://github.com/PedroThiagoMaisse/newPortfolio',
+            link: 'https://github.com/PedroThiagoMaisse/portfolio',
             lastEdit: 'Abril, 2024'
         },
         {
