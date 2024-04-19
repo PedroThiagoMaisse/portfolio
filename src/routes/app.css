@@ -63,19 +63,23 @@
     text-align: center;
   }
   
-  button {
+  button, .buttonPattern {
     border-style: none;
-    border-radius: 8px;
+    border-radius: 0px;
+    text-align: center;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
     transition: 0.75s;
     outline: rgba(250, 250, 250, 0.0) solid 2px;
+    text-decoration: none;
+    padding: 8px;
   }
   button:hover:not(.skipPattern),
   button:focus:not(.skipPattern),
-  button:focus-visible:not(.skipPattern) {
+  button:focus-visible:not(.skipPattern),
+  .buttonPattern:hover, .buttonPattern:focus, .buttonPattern:focus-visible {
     outline: rgba(250, 250, 250, 0.3) solid 2px;
     background-color: rgba(0, 0, 0, 1) !important;
     color: #dcdee5 !important;

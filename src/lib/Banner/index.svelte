@@ -74,7 +74,7 @@
     <div class="bg">
         <p>
             Bem vindo à um pedacinho do que eu faço,<br />
-            Qualquer bug e dica pode ser direcionado para
+            Qualquer problema, entre em contato com:
             <a href="mailto:pedrothiagojosedasilva@gmail.com">
                 pedrothiagojosedasilva@gmail.com
             </a>

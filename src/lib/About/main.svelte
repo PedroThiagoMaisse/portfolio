@@ -1,10 +1,13 @@
 <main>
     <div class="textColumn">
         <h1> Sobre </h1>
-        <p> Desenvolvedor com um tiquinho de conhecimento sobre gestão de projeto, filosofia, literatura, música e matemática. 
-            A maior constância que tive até hoje foi a vontade de aprender e de estar sempre me desafiando.</p>
-        <h1> Engenharia </h1>
-        <p>  Por influência dessas vontades, a escolha de ir para o caminho de engenharia foi natural (demorei 4 anos p/ começar a faculdade certa), assim como a decisão de sempre me atualizar sobre Design Patternns, Stacks, linguagens e sistemas totalmente novos.</p>
+        <p> Meu nome é Pedro Thiago, Sou um desenvolvedor e freelancer de Curitiba, com um fundinho em gestão de projeto, literatura, música e matemática. 
+        <br>Meu trabalho atual consiste em desenvolvimento full-time em uma start-up no setor logístico, além de manter minhas diversas paixões e interesses em segundo plano.
+        </p>
+        <!-- <h1> Engenharia </h1> -->
+        <p> Por conta da minha diversificação em linguagens de programação, e da natureza fluída do mercado de Software,
+            sempre estou correndo para me manter atualizado com novas bibliotecas, ferramentas e linguagens. 
+        </p>
    
     </div>
 
@@ -43,7 +46,7 @@ const outlineProgression = [
     }
 
     .textColumn p{
-        margin-bottom: 0px;
+        margin-bottom: 18px;
         margin-top: 0px;
         position: relative;
         text-align: left;
@@ -66,7 +69,7 @@ const outlineProgression = [
     .imageDiv{
         position: relative;
         left: calc(60% - 200px);
-        top: 105px;
+        top: 36px;
         transform: rotate3d(0, 1, -0.1, 15deg);
     }
 
@@ -87,21 +90,23 @@ const outlineProgression = [
     }
 
     .imageColumn{
-        width: 50%;
+        width: 35%;
         height: 100%;
     }
 
     .textColumn{
-        width: 50%;
+        width: 60%;
         height: 100%;
     }
 
     main{
+        margin-top: 62px;
+        margin-bottom: 62px;
         margin-left: 172px;
         margin-right: 172px;
         display: flex;
+        justify-content: space-between;
         position: relative;
-        min-height: 560px;
         color: #333;
     }
 

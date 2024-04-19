@@ -22,8 +22,10 @@
                 <p class="mainText">
                     {item.text}
                 </p>
-                <div class="tags">
-                    <Tag tagArray="{item.tags}"></Tag>
+                <div class="tagwrapper">
+                    <div class="tags">
+                        <Tag tagArray="{item.tags}"></Tag>
+                    </div>
                 </div>
                
             </button>
@@ -56,7 +58,7 @@
         {
             element: undefined,
             name: 'Esse portfólio', 
-            tags: ['Svelte', 'JS', 'GitPages'], 
+            tags: ['Svelte', 'TS', 'GitHub Actions', 'GitPages'], 
             img: '', 
             text: 'Página construída com foco em presentabilidade e rapidez',
             link: 'https://github.com/PedroThiagoMaisse/portfolio',
@@ -108,6 +110,9 @@
     }
     h1{
         color: #BA5DC7 !important;  
+    }
+    .tagwrapper{
+        height: 32px;
     }
     .mainText{
         font-size: 16px;
