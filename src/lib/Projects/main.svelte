@@ -22,8 +22,10 @@
                 <p class="mainText">
                     {item.text}
                 </p>
-                <div class="tags">
-                    <Tag tagArray="{item.tags}"></Tag>
+                <div class="tagwrapper">
+                    <div class="tags">
+                        <Tag tagArray="{item.tags}"></Tag>
+                    </div>
                 </div>
                
             </button>
@@ -108,6 +110,9 @@
     }
     h1{
         color: #BA5DC7 !important;  
+    }
+    .tagwrapper{
+        height: 32px;
     }
     .mainText{
         font-size: 16px;

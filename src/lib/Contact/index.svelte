@@ -12,10 +12,8 @@
         </div>
         <div class="links">
             {#each contacts as contact}
-            <a href="{contact.link}" target="_blank">
-                <button style="width: 92px; margin-bottom: 12px">
-                    {contact.text}
-                </button>
+            <a href="{contact.link}" target="_blank" class="buttonPattern" style="width: 92px; margin-bottom: 12px; color: #333">
+                {contact.text}
             </a>
             {/each}
         </div>
