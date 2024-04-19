@@ -67,7 +67,7 @@
         {
             element: undefined,
             name: 'Morgan', 
-            tags: ['Svelte', 'JS', 'GitPages'], 
+            tags: ['Next', 'TS', 'GitPages', 'GitHub Actions', 'React'], 
             img: '', 
             text: 'Um editor e publicador de textos',
             link: 'https://github.com/PedroThiagoMaisse/MOrgan',

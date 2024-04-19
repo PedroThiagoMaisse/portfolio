@@ -16,11 +16,9 @@
                     <p>
                         {element.text}
                     </p>
-                    {#each element.Stack as line}
                     <p class="lines">    
-                        - {line}
+                        <Tag tagArray={element.Stack}/>
                     </p>
-                    {/each}
                 </div>
                 
             </div>
@@ -30,6 +28,8 @@
 </main>
 
 <script lang="ts">
+    import Tag from "$lib/globals/tag.svelte";
+
     const jobs = [
         {
             Company: "Embarca",
@@ -41,7 +41,9 @@
                 "AWS",
                 "State Machines",
                 "Airflow",
-                "Elastic"
+                "Elastic",
+                "PostgreSQL",
+                "Docker"
             ],
             text: "Ferramenta para obtenção de preços de mercado e atualização dos nossos preços seguindo uma série de regras de négocio. Trabalhei principalmente com a manutenção e incorporação de novas features do nosso 'backend'. Principais tecnologias da stack:"
         },
@@ -52,11 +54,12 @@
             End: "Dez 2023",
             Stack: [
                 "Node",
-                "TypeScript",
-                "IBM Watson Assistant",
+                "TS",
+                "IBM",
+                "Watson Assistant",
                 "Docker",
                 "Azure",
-                "Mongo Db"
+                "MongoDB"
             ],
             text: "Centro de excelencia com o objetivo de centralizar a criação e manutenção dos bots corporativos da empresa, que somam mais de 4,4M de Mensagens mensais. Atuei com a organização do time, conexão com outras áreas e resolvimentos de bugs, assim na criação de bots emergenciais. Principais tecnologias da stack:"
         },
@@ -66,12 +69,13 @@
             Start: "Maio 2022",
             End: "Janeiro 2023",
             Stack: [
-                "FrontEnd (Vue, React e Next)",
-                "Backend (Node)",
-                "Agildidade",
-                "UX/UI",
-                "Dados (Cientistas e Engenheiros)",
-                "RPA"
+                "Next",
+                "Vue",
+                "React Native",
+                "MySQL",
+                "Node",
+                "Agilididade",
+                "Azure"
 
             ],
             text: "Hub de formação de estagiário que possibilitava o avanço de soft e hardskills focados em diversas formações do mundo tech. Atuei com a coordenação e acompanhamento dos 30+ estagiários do programa, assim como mentor de front, back e agilidade. Os grupos de estagiários eram:"
@@ -83,6 +87,7 @@
             End: "Fevereiro 2022",
             Stack: [
                 "Vue",
+                "MySQL",
                 "React Native",
                 "Node",
                 "Azure"
@@ -97,8 +102,10 @@
 
 <style>
     .lines{
+        color: #fafafa;
         font-size: 14px; 
-        line-height: 100%
+        line-height: 100%;
+        width: 100%;
     }
     h1{
         color: #c6975e
