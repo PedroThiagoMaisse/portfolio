@@ -19,15 +19,21 @@
         TS: '#333395',
         JS: '#caa829',
         Node: '#caa829',
-        Vue: '#35815d',
+        Vue: '#327959',
         AWS: '#e28000',
         Lambda: '#e28000',
         Python: '#1b3652',
         Serveless: '#be4a45',
         Azure: '#1066b3',
-        Next: '#0e7696',
-        React: '#0e7696',
-        "React Native": '#0e7696'
+        Next: '#4dadc7',
+        React: '#4dadc7',
+        "React Native": '#4dadc7',
+        Airflow: '#e43921',
+        Elastic: '#cba707',
+        PostgreSQL: '#306792',
+        Docker: '#0dbcf4',
+        IBM: "#333",
+        MySQL: '#f29111'
     }
 </script>
 

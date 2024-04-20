@@ -1,18 +1,19 @@
 <main>
     <h1> Contato </h1>
-    <div class="columns">
+    <!-- <div class="columns"> -->
+    <div>
         <div>
             <p class="caller">
                 Interessado(a) em algo que viu? <br> 
                 Me chame em alguma rede social!
             </p>
-            <button class="callerButton">
+            <!-- <button class="callerButton">
                 Entre em contato
-            </button>
+            </button> -->
         </div>
         <div class="links">
             {#each contacts as contact}
-            <a href="{contact.link}" target="_blank" class="buttonPattern" style="width: 92px; margin-bottom: 12px; color: #333">
+            <a href="{contact.link}" target="_blank" class="buttonPattern" style="">
                 {contact.text}
             </a>
             {/each}
@@ -23,25 +24,25 @@
 <script lang="ts">
     const contacts = [
         {
-            text: "LinkedIn",
+            text: "linkedin.com/in/pedro-thiago-2536a01a0/",
             scale: 0.6,
             link: "https://www.linkedin.com/in/pedro-thiago-2536a01a0/",
         },
         
         {
-            text: "Twitter",
+            text: "twitter.com/Pe_ssimista",
             scale: 0.6,
-            link: "https://twitter.com/Pe_ssimista?t=imMJY3HtbLoXNbqRl5bBzg&s=08"
+            link: "https://twitter.com/Pe_ssimista"
         },
         
         {
-            text: "GitHub",
+            text: "github.com/PedroThiagoMaisse",
             topOffset: '-0.5px',
             link: "https://github.com/PedroThiagoMaisse",
         },
         
         {
-            text: "E-Mail",
+            text: "pedrothiagojosedasilva@gmail.com",
             scale: 0.8,
             link: "mailto:pedrothiagojosedasilva@gmail.com"
         }
@@ -52,7 +53,7 @@
 
 <style>
     .caller{
-        font-size: 32px; 
+        font-size: 28px; 
         margin: 0px 0px 56px 0px; 
         font-weight: 600
     }
@@ -60,23 +61,38 @@
     h1{
         color: #5DABC7
     }
-    .columns{
+    /* .columns{
         display: flex;
         justify-content: space-between;
-    }
+    } */
+
+    /* .links{
+        display: flex; 
+        flex-direction: column
+    } */
 
     .links{
         display: flex; 
-        flex-direction: column
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    button{
+    a{
+        margin-bottom: 12px; 
+        color: #333;
+        text-align: left;
+        width: 45%;
+        text-decoration:underline;
+    }
+
+    /* button{
         padding: 12px;
         border-radius: 0px;
         background-color: #dcdee5;
         color: #333;
         outline: rgba(0, 0, 0, 1) solid 2px !important;
-    }
+    } */
 
     main{
         margin-left: 172px;
@@ -87,11 +103,11 @@
         color: #333;
     }
 
-    .callerButton{
+    /* .callerButton{
         height: 52px; 
         font-size: 20px; 
         margin-bottom: 12px
-    }
+    } */
 
     @media only screen and (max-width: 790px) {
         main{
@@ -101,7 +117,7 @@
         .caller{
             font-size: 24px;
         }
-        .callerButton{
+        /* .callerButton{
             display: none;
             font-size: 16px;
         }
@@ -109,12 +125,12 @@
             display: flex;
             flex-direction: column;
             justify-content:start;
-        }
-        .links{
+        } */
+        /* .links{
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
+        } */
     }
 
 
