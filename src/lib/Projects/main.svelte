@@ -4,31 +4,7 @@
     <div class="scrollarea" bind:this={projectList}>
     <div class="projectList show">
         {#each projects as item, index (index)}
-            <button
-            style="
-                background-size: cover;
-                background-image: linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url('{item.img}')
-            "
-            class="skipPattern"
-            aria-label="get more details from: {item.name}"
-            on:click={() => window.open(item.link, "_blank")}
-            >
-                <p class="lastEdit">
-                    {item.lastEdit}
-                </p>
-                <p class="projectName">
-                    {item.name}
-                </p>
-                <p class="mainText">
-                    {item.text}
-                </p>
-                <div class="tagwrapper">
-                    <div class="tags">
-                        <Tag tagArray="{item.tags}"></Tag>
-                    </div>
-                </div>
-               
-            </button>
+            <Card item={item} --url={create_background(item.img)}/>
         {/each}
     </div>
     </div>
@@ -38,7 +14,7 @@
 
 <script lang="ts">
     import brfcodeImg from '../../assets/brfcode.png'
-    import Tag from '../globals/tag.svelte';
+    import Card from './card.svelte';
     interface element {
         element: any,
         name: string, 
@@ -67,7 +43,7 @@
         {
             element: undefined,
             name: 'Morgan', 
-            tags: ['Svelte', 'JS', 'GitPages'], 
+            tags: ['Next', 'TS', 'GitPages', 'GitHub Actions', 'React'], 
             img: '', 
             text: 'Um editor e publicador de textos',
             link: 'https://github.com/PedroThiagoMaisse/MOrgan',
@@ -101,42 +77,19 @@
             lastEdit: 'Dezembro 2023'
         },
     ]
+
+    function create_background(img){
+        if (img != '' && img) 
+            return "linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url("+ img +")"
+        else
+            return "linear-gradient( #333 0%, #333 100%),url("+ img +")"
+    }
 </script>
 
 
 <style>
-    p{
-        margin: 8px;
-    }
     h1{
         color: #BA5DC7 !important;  
-    }
-    .tagwrapper{
-        height: 32px;
-    }
-    .mainText{
-        font-size: 16px;
-        text-align: center;
-        padding: 0px 8px
-        /* align-items:baseline; */
-    }
-    .projectName{
-        line-height: 120%;
-        font-size: 24px;
-        font-weight: 600;
-        color: #FFF;
-    }
-    .lastEdit{
-        transition: 1s;
-        line-height: 100%;
-        opacity: 0;
-    }
-    .tags{
-        margin-top: 16px;
-        transition: 1s;
-        opacity: 0;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     .sideScroll{
@@ -159,30 +112,11 @@
         right: calc(-172px - 100px);
     }
 
-    .projectList button{
-        margin-left: 16px;
-        opacity: 1;
-        position: relative;
-        height: 460px;
-        width: 300px;
-        border-radius: 16px;
-        background-size: cover;
-    }
-
     button:hover,
     button:focus,
     button:focus-visible{
         outline: rgba(250, 250, 250, 0.6) solid 2px;
         backdrop-filter: blur(20px);
-    }
-
-    button:hover .tags,
-    button:focus .tags,
-    button:focus-visible .tags,
-    button:hover .lastEdit,
-    button:focus .lastEdit,
-    button:focus-visible .lastEdit{
-        opacity: 1;
     }
 
     .scrollarea{
@@ -249,29 +183,8 @@
             font-size: 16px;
         }
 
-        .projectList button{
-            height: 230px;
-            min-width: 150px;
-            margin-bottom: 20px;
-            padding: 2px;
-        }
-
-        .mainText{
-            font-size: 12px;
-            padding: 6px;
-        }
-
-        .projectName{
-            margin: 6px 4px;
-            font-size: 16px;
-        }
-
         .projectList{
             width: calc(100vw - 16px);
-        }
-
-        .tags{
-            opacity: 1;
         }
     }
 

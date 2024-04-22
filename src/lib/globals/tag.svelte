@@ -1,9 +1,11 @@
 
-{#if tagArray}
-    {#each tagArray as tag, i (tag)}
-        <spam style="background-color: {tagColors[tag]}" class=tag>{tag}</spam>
-    {/each}  
-{/if}
+<main>
+    {#if tagArray}
+        {#each tagArray as tag, i (tag)}
+            <spam style="background-color: {tagColors[tag]}" class=tag>{tag}</spam>
+        {/each}  
+    {/if}
+</main>
 
 
 <script lang="ts">
@@ -17,25 +19,40 @@
         TS: '#333395',
         JS: '#caa829',
         Node: '#caa829',
-        Vue: '#4BB483',
+        Vue: '#327959',
         AWS: '#e28000',
         Lambda: '#e28000',
         Python: '#1b3652',
         Serveless: '#be4a45',
-        Azure: '#1066b3'
+        Azure: '#1066b3',
+        Next: '#4dadc7',
+        React: '#4dadc7',
+        "React Native": '#4dadc7',
+        Airflow: '#e43921',
+        Elastic: '#cba707',
+        PostgreSQL: '#306792',
+        Docker: '#0dbcf4',
+        IBM: "#333",
+        MySQL: '#f29111'
     }
 </script>
 
 
 <style>
+    main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .tag{
         background-color: #555555;
         text-align: center;
-        line-height: 100%;
+        line-height: 120%;
         padding: 4px 4px 4px 5px;
         font-size: 14px;
         margin-left: 8px;
-        margin-bottom: 4px;
+        margin-top: 2px;
+        margin-bottom: 8px;
         border-radius: 4px;
     }
 
