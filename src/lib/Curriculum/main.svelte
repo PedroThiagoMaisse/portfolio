@@ -61,7 +61,7 @@
                 "Azure",
                 "MongoDB"
             ],
-            text: "Centro de excelencia com o objetivo de centralizar a criação e manutenção dos bots corporativos da empresa, que somam mais de 4,4M de Mensagens mensais. Atuei com a organização do time, conexão com outras áreas e resolvimentos de bugs, assim na criação de bots emergenciais. Principais tecnologias da stack:"
+            text: "Centro de excelencia com o objetivo de centralizar a criação e manutenção dos bots corporativos da empresa, que somam mais de 4,4M de Mensagens mensais. Atuei com a organização do time, conexão com outras áreas e resolvimentos de bugs, assim como na criação de bots. Principais tecnologias da stack:"
         },
         {
             Company: "BRF Food - Digital Lab",

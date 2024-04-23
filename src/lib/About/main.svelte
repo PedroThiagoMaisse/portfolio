@@ -1,7 +1,8 @@
 <main>
     <div class="textColumn">
         <h1> Sobre </h1>
-        <p> Meu nome é Pedro Thiago, Sou um desenvolvedor e freelancer de Curitiba, com um fundinho em gestão de projeto, literatura, música e matemática. 
+        <p><br>
+        Meu nome é Pedro Thiago, Sou um desenvolvedor e freelancer de Curitiba, com um fundinho em gestão de projeto, literatura, música e matemática. 
         <br>Meu trabalho atual consiste em desenvolvimento full-time em uma start-up no setor logístico, além de manter minhas diversas paixões e interesses em segundo plano.
         </p>
         <!-- <h1> Engenharia </h1> -->
@@ -39,10 +40,10 @@ const outlineProgression = [
     }
 
     .textColumn h1{
+        margin-top: 0px;
         position: relative;
         text-align: left;
         margin-bottom: 0px;
-        margin-top: 28px;
     }
 
     .textColumn p{
@@ -100,7 +101,7 @@ const outlineProgression = [
     }
 
     main{
-        margin-top: 62px;
+        min-height: 440px;
         margin-bottom: 62px;
         margin-left: 172px;
         margin-right: 172px;
