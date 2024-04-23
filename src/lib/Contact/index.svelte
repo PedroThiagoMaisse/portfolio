@@ -24,25 +24,25 @@
 <script lang="ts">
     const contacts = [
         {
-            text: "linkedin.com/in/pedro-thiago-2536a01a0/",
+            text: "Linkedin.com/in/pedro-thiago-silva/",
             scale: 0.6,
-            link: "https://www.linkedin.com/in/pedro-thiago-2536a01a0/",
+            link: "https://www.linkedin.com/in/pedro-thiago-silva/",
         },
         
         {
-            text: "twitter.com/Pe_ssimista",
+            text: "Twitter.com/Pe_ssimista",
             scale: 0.6,
             link: "https://twitter.com/Pe_ssimista"
         },
         
         {
-            text: "github.com/PedroThiagoMaisse",
+            text: "Github.com/PedroThiagoMaisse",
             topOffset: '-0.5px',
             link: "https://github.com/PedroThiagoMaisse",
         },
         
         {
-            text: "pedrothiagojosedasilva@gmail.com",
+            text: "Pedrothiagojosedasilva@gmail.com",
             scale: 0.8,
             link: "mailto:pedrothiagojosedasilva@gmail.com"
         }

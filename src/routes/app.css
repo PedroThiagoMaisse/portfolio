@@ -21,7 +21,7 @@
   }
   :root {
     overflow: overlay;
-    font-family: 'Work Sans',monospace, sans-serif;
+    font-family: 'RedHatText';
     line-height: 1.5;
     font-weight: 400;
   
@@ -84,3 +84,11 @@
     background-color: rgba(0, 0, 0, 1) !important;
     color: #dcdee5 !important;
   }
+
+  @font-face {
+    font-family: 'RedHatText';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/RedHatText-VariableFont_wght.ttf'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+}
