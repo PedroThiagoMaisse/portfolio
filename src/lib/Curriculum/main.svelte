@@ -32,10 +32,27 @@
 
     const jobs = [
         {
+            Company: "Azagros",
+            Title: "Azagros",
+            Start: "Jun 2024",
+            End: "Atual",
+            Stack: [
+                "TS",
+                "AWS",
+                "ECS",
+                "Java",
+                "Quarkus",
+                "React",
+                "Docker",
+                "Azure Pipelines"
+            ],
+            text: "Ferramenta de acompanhamento de produção e agendas de tecnícos agrícolas"
+        },
+        {
             Company: "Embarca",
             Title: "Embarca - Dynamic Pricing",
             Start: "Dez 2023",
-            End: "Atual",
+            End: "Jun 2024",
             Stack: [
                 "Python",
                 "AWS",
