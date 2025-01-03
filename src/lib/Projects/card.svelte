@@ -65,7 +65,7 @@
         background-size: cover;
     }
     main{
-        width: 100%;
+        width: fit-content;
         padding: 0px;
         margin-left: 0px !important;
         margin-right: 0px !important;

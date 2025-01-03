@@ -32,10 +32,44 @@
 
     const jobs = [
         {
+            Company: "Azagros",
+            Title: "Azagros - Product Team",
+            Start: "Jun 2024",
+            End: "Atual",
+            Stack: [
+                "TS",
+                "AWS",
+                "ECS",
+                "S3",
+                "Azure Pipelines",
+                "PostgreSQL",
+                "Docker",
+                "Java",
+                'Dart',
+                'React'
+            ],
+            text: "Plataforma para acompanhamento de produtores agricolas e técnicos. Atuei na manutenção e expansão de front (web e mobile) e backend. Principais tecnologias da stack:"
+        },
+        {
+            Company: "Sourtec",
+            Title: "Sourtec",
+            Start: "Outubro 2024",
+            End: "Fev 2025",
+            Stack: [
+                "React",
+                "Javascript",
+                "Lambdas",
+                "Go",
+                "S3",
+                "PostgreSQL"
+            ],
+            text: "Arquitetura, Design e Criação de uma plataforma de acompanhamento de dissecção de Dutos. Principais tecnologias da stack:"
+        },
+        {
             Company: "Embarca",
             Title: "Embarca - Dynamic Pricing",
             Start: "Dez 2023",
-            End: "Atual",
+            End: "Jun 2024",
             Stack: [
                 "Python",
                 "AWS",

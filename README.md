@@ -29,6 +29,7 @@ Design:
     - Novo banner
     - Atualizar o Scroller
     - Alterar Cores
+    - Limpar as classes
 
 
 ### Backlog:

@@ -66,16 +66,7 @@
             text: 'Ferramenta para monitoramento de outros sitemas',
             link: 'https://github.com/PedroThiagoMaisse/olive',
             lastEdit: 'Dezembro, 2023'
-        },
-        {
-            element: undefined,
-            name: 'BRFCode',
-            img: brfcodeImg,
-            text: "BRFCode, uma plataforma para auxiliar na validação em entregas",
-            link: "https://BRFCode.com",
-            tags: ["JS", "Vue", "Node", "Azure"],
-            lastEdit: 'Dezembro 2023'
-        },
+        }
     ]
 
     function create_background(img){
@@ -134,8 +125,10 @@
         margin-bottom: 16px;
         padding-left: 80px;
         padding-right: 80px;
+        min-width: calc(100vw - 160px);
         width: fit-content;
         display: flex;
+        justify-content: space-evenly;
     }
 
     main{
